@@ -347,4 +347,9 @@
   [hidden] {
     display: none;
   }
-  
+
+  /* Removing <ul> margins */
+  ul {
+    margin: 0;
+    padding: 0;
+  }

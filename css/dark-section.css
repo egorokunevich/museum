@@ -55,7 +55,17 @@
 }
 .sliderArrow {
     width: 30px;
+    height: 8px;
 }
+
+.arrowRight {
+    background-image: url(../assets/svg/arrowRight.svg);
+}
+
+.arrowLeft {
+    background-image: url(../assets/svg/arrowLeft.svg);
+}
+
 .sliderArrow:hover {
     cursor: pointer;
 }

@@ -8,6 +8,14 @@ header {
     height: 150px;
 }
 
+li {
+    list-style: none;
+}
+
+nav {
+    max-width: 775px;
+}
+
 nav a {
     margin-right: 2.5em;
 }
@@ -22,9 +30,16 @@ nav a {
     margin-left: 0.5em;
     letter-spacing: 5px;
     font-size: 28px;
+    text-transform: uppercase;
 }
 
 .logoHeader {
     display: flex;
     align-items: center;
+}
+
+.logoImg {
+    width: 49px;
+    height: 26px;
+    background-image: url("../assets/svg/logo.svg");
 }
