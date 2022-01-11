@@ -1,0 +1,145 @@
+.container {
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+header {
+    background-color: #030303;
+    height: 150px;
+}
+
+nav a {
+    margin-right: 2.5em;
+}
+
+.navContacts{
+    margin-right: 0;
+}
+
+.logoHeader h3 a{
+    font-family: 'Forum', cursive;
+    color: #FFFFFF;
+    font-weight: 300;
+    margin-left: 0.5em;
+    letter-spacing: 5px;
+    font-size: 28px;
+}
+
+.logoHeader {
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Forum', cursive;
+    font-size: 80px;
+    font-weight: 100;
+    margin: 0 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;   
+}
+
+a {
+    font-family: 'Roboto', sans-serif; 
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.welcomeSection {
+    color: #FFFFFF;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Для заливки фона вне контейнераы */
+.backWrapper {
+    background-color: #030303;
+}
+
+.welcomeLeft {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: visible;
+    z-index: 100;
+    font-size: 28px;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Button */
+
+.button {
+    width: 360px;
+    height: 75px;
+    padding: 2em;
+    background-color: #710707;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.button a {
+    display: inline-block;
+}
+
+.welcomeImg {
+    position: absolute;
+    right: 0;
+    mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 20%);
+   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 20%);
+}
+
+/* #visiting {
+    background: #030303;
+    height: max-content;
+} */
+
+
+/* Slider */
+
+ .slider {
+     width: 600px;
+     height: 120px;
+     background-color: #030303;
+     z-index: 2;
+     font-size: 22px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+
+    /* тест */
+    top: 690px;
+    
+    right: 0;
+    bottom: 0;
+ }
+ .sliderDot {
+     width: 16px;
+     height: 16px;
+     background-color: #FFFFFF;
+     margin-right: 20px;
+ }
+ .sliderArrows {
+    width: 80px;
+    justify-content: space-between;
+ }
+ .sliderArrow {
+     width: 30px;
+ }
+ .sliderArrow:hover {
+     cursor: pointer;
+ }
