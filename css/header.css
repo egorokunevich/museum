@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header {
+    background-color: #030303;
+    height: 150px;
+}
+
+li {
+    list-style: none;
+    padding: 1em;
+    line-height: 100%;
+}
+
+nav {
+    max-width: 775px;
+}
+
+/* nav a {
+    margin-right: 2.5em;
+} */
+
+.navContacts{
+    margin-right: 0;
+}
+
+.logoHeader h3 a{
+    font-family: 'Forum', cursive;
+    font-weight: 300;
+    margin-left: 0.5em;
+    letter-spacing: 5px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.logoHeader {
+    display: flex;
+    align-items: center;
+}
+
+.logoImg {
+    width: 49px;
+    height: 26px;
+    background-image: url("../assets/svg/logo.svg");
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-section.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <!-- linking fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet"> 
+    
+    <title>Louvre Museum</title>
+</head>
+<body>
+  <header id="header">
+      <div class="container flex">
+          <div class="logoHeader">
+            <!-- <img src="assets/img/icons/logo.png" alt="logo"> -->
+            <div class="logoImg"></div>
+            <h3>
+              <a href="#header">Louvre</a>
+            </h3>
+          </div>
+          <nav>
+            <ul class="flex-wrap">
+              <li><a href="#visiting">Visiting</a></li>
+              <li><a href="#explore">Explore</a></li>
+              <li><a href="#video">Video</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#tickets">Tickets</a></li>
+              <li><a href="#contacts" class="navContacts">Contacts</a></li>
+            </ul>
+          </nav>
+      </div>
+  </header>
+
+    <main>
+        <div class="bgWrapper"> <!-- для заливки фона за пределами контейнера -->
+            <div class="container">
+                <!-- Welcome Section -->
+                <section class="flex darkSection">
+
+                        <div class="darkLeft">
+                            <h2>Welcome</h2>
+                            <h2>To the Louvre</h2>
+                            <p>From the castle to the museum</p>
+                            <a class="button" href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover the Louvre</a>
+                        </div>
+                        <img class="darkImg" src="assets/img/welcome-slider/1.jpg" alt="1_MonaLisa">
+                             
+                        <!-- Slider -->
+                        <div class="slider flex">
+                            <p>01 | 05</p>
+                              <div class="sliderDots flex">
+                                <div class="sliderDot activeDot"></div>  <!-- activeDot - выделяется цветом -->
+                                <div class="sliderDot"></div>
+                                <div class="sliderDot"></div>
+                                <div class="sliderDot"></div>
+                                <div class="sliderDot"></div>
+                              </div>
+                            <div class="sliderArrows flex">
+                              <div class="sliderArrow arrowLeft"></div>
+                              <div class="sliderArrow arrowRight"></div>
+                            </div>
+                        </div>
+
+                </section>
+                
+                <section id="visiting"></section>
+                <section id="explore"></section>
+                <section id="video"></section>
+                <section id="gallery"></section>
+                <section id="tickets"></section>
+                <section id="contacts"></section>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

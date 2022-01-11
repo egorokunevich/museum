@@ -1,0 +1,75 @@
+.darkSection {
+    position: relative;
+    /* height: 810px; */
+}
+
+/* Для заливки фона вне контейнера */
+.bgWrapper {
+    background-color: #030303;
+}
+
+/* Контент с левой стороны секции */
+.darkLeft {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: visible;
+    z-index: 100;
+    font-size: 28px;
+}
+
+/* Изображения слайдера в Welcome (правая сторона секции) */
+.darkImg {
+    position: absolute;
+    right: 0;
+    mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 20%);
+   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 20%);
+}
+
+/* Слайдер */
+.slider {
+    width: 600px;
+    height: 120px;
+    background-color: #030303;
+    z-index: 2;
+    font-size: 22px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* абсолютное позиционирование слайдера */
+    position: absolute;
+    top: 690px;
+    right: 0;
+    bottom: 0;
+}
+
+/* Точки слайдера */
+.sliderDot {
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    margin-right: 20px;
+}
+.activeDot {
+    background-color: #D2B183;
+}
+
+/* Стрелки слайдера */
+.sliderArrows {
+   width: 80px;
+   justify-content: space-between;
+}
+.sliderArrow {
+    width: 30px;
+    height: 8px;
+}
+.arrowRight {
+    background-image: url(../assets/svg/arrowRight.svg);
+}
+.arrowLeft {
+    background-image: url(../assets/svg/arrowLeft.svg);
+}
+.sliderArrow:hover {
+    cursor: pointer;
+}

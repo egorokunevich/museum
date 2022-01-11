@@ -1,0 +1,58 @@
+* {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.container {
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-flow: wrap;
+}
+
+a {
+    letter-spacing: 2px;
+}
+
+h2{
+    font-family: 'Forum', cursive;
+    font-size: 80px;
+    font-weight: 100;
+    margin: 0 0;
+    text-transform: uppercase;
+}
+
+/* Button */
+
+.button {
+    width: 360px;
+    height: 75px;
+    padding: 2em;
+    background-color: #710707;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+/* .button a {
+    display: inline-block;
+} */
+
+html {
+    scroll-behavior: smooth;
+}
