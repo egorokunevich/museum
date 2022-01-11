@@ -19,13 +19,13 @@
     <title>Louvre Museum</title>
 </head>
 <body>
-  <header>
+  <header id="header">
       <div class="container flex">
           <div class="logoHeader">
             <!-- <img src="assets/img/icons/logo.png" alt="logo"> -->
             <div class="logoImg"></div>
             <h3>
-              <a href="#welcome">Louvre</a>
+              <a href="#header">Louvre</a>
             </h3>
           </div>
           <nav>
@@ -42,11 +42,11 @@
   </header>
 
     <main>
-        <div class="backWrapper"> <!-- для заливки фона за пределами контейнера -->
+        <div class="bgWrapper"> <!-- для заливки фона за пределами контейнера -->
             <div class="container">
                 <!-- Welcome Section -->
-                <section id="welcome" class="darkSection">
-                    <div class="flex welcomeContent">
+                <section class="flex darkSection">
+
                         <div class="darkLeft">
                             <h2>Welcome</h2>
                             <h2>To the Louvre</h2>
@@ -59,7 +59,7 @@
                         <div class="slider flex">
                             <p>01 | 05</p>
                               <div class="sliderDots flex">
-                                <div class="sliderDot"></div>
+                                <div class="sliderDot activeDot"></div>  <!-- activeDot - выделяется цветом -->
                                 <div class="sliderDot"></div>
                                 <div class="sliderDot"></div>
                                 <div class="sliderDot"></div>
@@ -70,7 +70,7 @@
                               <div class="sliderArrow arrowRight"></div>
                             </div>
                         </div>
-                    </div>
+
                 </section>
                 
                 <section id="visiting"></section>

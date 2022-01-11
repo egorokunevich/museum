@@ -23,7 +23,6 @@
 }
 
 a {
-    text-decoration: none;
     letter-spacing: 2px;
 }
 
@@ -50,6 +49,10 @@ h2{
     font-size: 22px;
 }
 
-.button a {
+/* .button a {
     display: inline-block;
+} */
+
+html {
+    scroll-behavior: smooth;
 }

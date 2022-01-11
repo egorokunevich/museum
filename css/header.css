@@ -10,15 +10,17 @@ header {
 
 li {
     list-style: none;
+    padding: 1em;
+    line-height: 100%;
 }
 
 nav {
     max-width: 775px;
 }
 
-nav a {
+/* nav a {
     margin-right: 2.5em;
-}
+} */
 
 .navContacts{
     margin-right: 0;
