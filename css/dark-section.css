@@ -1,10 +1,10 @@
 .darkSection {
     position: relative;
-    /* height: 810px; */
+    width: 100%;
 }
 
 /* Для заливки фона вне контейнера */
-.bgWrapper {
+.bgWrapper-dark {
     background-color: #030303;
 }
 
@@ -26,11 +26,14 @@
     width: calc(100% - 440px);
 }
 
+.mask {
+    position: relative;
+    width: 100%;
+}
+
 /* Изображения слайдера в Welcome (правая сторона секции) */
 .sliderImg {
-    position: absolute;
     display: block;
-    right: 0;
     /* width: calc(100% - 440px); */
     width: 100%;
     height: auto;
@@ -40,19 +43,19 @@
 
 /* Слайдер */
 .slider {
-    width: 600px;
-    height: 120px;
+    /* width: 600px;
+    height: 120px; */
     background-color: #030303;
     z-index: 2;
     font-size: 22px;
     justify-content: space-evenly;
     align-items: center;
 
-    /* абсолютное позиционирование слайдера */
+    width: 60%;
+    height: 16%;
     position: absolute;
-    top: 690px;
     right: 0;
-    bottom: 0;
+    bottom: -8%;
 }
 
 /* Точки слайдера */

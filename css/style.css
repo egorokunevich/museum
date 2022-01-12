@@ -33,9 +33,20 @@ h2{
     margin: 0 0;
     text-transform: uppercase;
 }
+
+h4 {
+    font-family: 'Forum', cursive;
+    font-size: 32px;
+    font-weight: 100;
+    margin: 0 0;
+    text-transform: uppercase;    
+    letter-spacing: 5px;
+}
+
 /* Подчеркивание заголовка */
 .underline-title {
     position: relative;
+    margin-bottom: 25px;
 }
 .underline-title::after {
     content: "";
@@ -69,4 +80,36 @@ h2{
 
 html {
     scroll-behavior: smooth;
+}
+
+.section {
+    padding: 75px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    width: 100%;
+}
+
+/* Card */
+
+.card {
+    margin: 25px 0;
+    padding: 75px 0 75px 0;
+}
+
+.cardInfo {
+    color: #030303;
+}
+
+.cardTitle {
+    margin: 15px 0;
+    color: #030303;
+}
+
+.cardDescription {
+    font-size: 18px;
+    color: #030303;
 }

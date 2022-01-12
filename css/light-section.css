@@ -1,5 +1,14 @@
 @import url(dark-section.css);
 
-.bgWrapper {
+.bgWrapper-light {
     background-color: #FFFFFF;
 }
+
+.title h2 {
+    color: #9d8665;
+}
+
+.innerContainer {
+    width: 100%;
+}
+

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dark-section.css">
+    <link rel="stylesheet" href="css/light-section.css">
     <link rel="stylesheet" href="css/header.css">
 
     <!-- linking fonts -->
@@ -42,7 +43,7 @@
   </header>
 
     <main>
-        <div class="bgWrapper"> <!-- для заливки фона за пределами контейнера -->
+        <div class="bgWrapper-dark"> <!-- для заливки фона за пределами контейнера -->
             <div class="container">
                 <!-- Welcome Section -->
                 <section class="flex darkSection">
@@ -54,8 +55,9 @@
                             <a class="button" href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover the Louvre</a>
                         </div>
                         <div class="sliderFull">
-                          <img class="sliderImg" src="assets/img/welcome-slider/1.jpg" alt="1_MonaLisa">
-                             
+                          <div class="mask">
+                            <img class="sliderImg" src="assets/img/welcome-slider/1.jpg" alt="1_MonaLisa">
+                          </div>   
                           <!-- Slider -->
                           <div class="slider flex">
                             <p>01 | 05</p>
@@ -75,17 +77,83 @@
 
                 </section>
                 
-                <section id="visiting" class="flex light-section">
-                  
-                </section>
-                <section id="explore"></section>
-                <section id="video"></section>
-                <section id="gallery"></section>
-                <section id="tickets"></section>
-                <section id="contacts"></section>
+                
             </div>
         </div>
-
+        <section id="visiting" class="section flex light-section">
+          <div class="bgWrapper-light"> <!-- для заливки фона за пределами контейнера -->
+            <div class="container">
+              <div class="title underline-title"><h2>Virtual tour</h2></div>
+              <div class="visitingCards flex">
+                <div class="card">
+                <a href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815">
+                  <div>
+                    <img src="assets/img/visiting/royal-palace.jpg" class="cardImg" alt="royal-palace">
+                    <h4 class="cardTitle cardUnderline">Royal palace</h4>
+                    <p class="cardInfo">360° Virtual Tour</p>
+                    <p class="cardDescription">Google Street Panorama View</p>
+                  </div>
+                </a>
+                </div>
+                <div class="card">
+                <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500">
+                  <div>
+                    <img src="assets/img/visiting/denon-wing.jpg" class="cardImg" alt="denon-wing">
+                    <h4 class="cardTitle cardUnderline">Denon wing</h4>
+                    <p class="cardInfo">360° Virtual Tour</p>
+                    <p class="cardDescription">Google Street Panorama View</p>
+                  </div>
+                </a>
+                </div>
+                <div class="card">
+                <a href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120">
+                  <div>
+                    <img src="assets/img/visiting/colonnade-perrault.jpg" class="cardImg" alt="colonnade-perrault">
+                    <h4 class="cardTitle cardUnderline">Colonnade perrault</h4>
+                    <p class="cardInfo">360° Virtual Tour</p>
+                    <p class="cardDescription">Google Street Panorama View</p>
+                  </div>
+                </a>
+                </div>
+                <div class="card">
+                <a href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736">
+                  <div>
+                    <img src="assets/img/visiting/greek-hall.jpg" class="cardImg" alt="greek-hall">
+                    <h4 class="cardTitle cardUnderline">Greek hall</h4>
+                    <p class="cardInfo">360° Virtual Tour</p>
+                    <p class="cardDescription">Google Street Panorama View</p>
+                  </div>
+                </a>
+                </div>
+                <div class="card">
+                <a href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120">
+                  <div>
+                    <img src="assets/img/visiting/mona-lisa.jpg" class="cardImg" alt="mona-lisa">
+                    <h4 class="cardTitle cardUnderline">Mona lisa</h4>
+                    <p class="cardInfo">360° Virtual Tour</p>
+                    <p class="cardDescription">Google Street Panorama View</p>
+                  </div>
+                </a>
+                </div>
+                <div class="card">
+                <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652">
+                  <div>
+                    <img src="assets/img/visiting/night-palace.jpg" class="cardImg" alt="night-palace">
+                    <h4 class="cardTitle cardUnderline">Night palace</h4>
+                    <p class="cardInfo">360° Virtual Tour</p>
+                    <p class="cardDescription">Google Street Panorama View</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </section>
+        <section id="explore"></section>
+        <section id="video"></section>
+        <section id="gallery"></section>
+        <section id="tickets"></section>
+        <section id="contacts"></section>
     </main>
 </body>
 </html>
