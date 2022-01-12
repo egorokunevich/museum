@@ -17,12 +17,23 @@
     overflow: visible;
     z-index: 100;
     font-size: 28px;
+    padding:calc(25% - 196px) 0 calc(50% - 415.7px) 0;
+}
+
+.sliderFull {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 440px);
 }
 
 /* Изображения слайдера в Welcome (правая сторона секции) */
-.darkImg {
+.sliderImg {
     position: absolute;
+    display: block;
     right: 0;
+    /* width: calc(100% - 440px); */
+    width: 100%;
+    height: auto;
     mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 20%);
    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 20%);
 }

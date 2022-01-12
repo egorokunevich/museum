@@ -33,6 +33,20 @@ h2{
     margin: 0 0;
     text-transform: uppercase;
 }
+/* Подчеркивание заголовка */
+.underline-title {
+    position: relative;
+}
+.underline-title::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: red;
+}
+
 
 /* Button */
 
