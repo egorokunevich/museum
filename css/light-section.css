@@ -1,19 +1,19 @@
 @import url(dark-section.css);
 
 .bgWrapper-light {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .title h2 {
-    color: #9d8665;
+  color: #9d8665;
 }
 
 .innerContainer {
-    width: 100%;
+  width: 100%;
 }
 
 .visitingCards {
-    flex-flow: wrap;
-    justify-content: space-between;
-    padding: 75px 0 0 0;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding: 75px 0 75px 0;
 }
