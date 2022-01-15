@@ -1,0 +1,38 @@
+.grid-test {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: "post-1 post-1 post-1 post-2 post-2 post-2 "
+                         "post-3 post-3 post-3 post-3 post-3 post-3 "
+                         "post-4 post-4 post-5 post-5 post-6 post-6 ";
+  }
+
+.item-1 {
+  background-color: black;
+  height: 50px;
+  grid-area: post-1;
+}
+.item-2 {
+  background-color: blueviolet;
+  grid-area: post-2;
+}
+
+.item-3 {
+    background-color: coral;
+    grid-area: post-3;
+}
+.item-4 {
+    
+    background-color: rgb(129, 69, 46);
+    grid-area: post-4;
+}
+.item-5 {
+    background-color: rgb(105, 113, 163);
+    grid-area: post-5;
+}
+.item-6 {
+    background-color: rgb(37, 167, 117);
+    grid-area: post-6;
+}
+
+

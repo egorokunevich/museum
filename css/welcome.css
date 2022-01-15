@@ -1,0 +1,92 @@
+.dark-section {
+  position: relative;
+  width: 100%;
+}
+
+/* Контент с левой стороны секции */
+.dark-left {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: visible;
+  z-index: 100;
+  font-size: 28px;
+  padding: calc(25% - 196px) 0 calc(50% - 415.7px) 0;
+}
+
+.slider {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 440px);
+}
+
+.slider__mask {
+  position: relative;
+  width: 100%;
+}
+
+/* Изображения слайдера в Welcome (правая сторона секции) */
+.slider__img {
+  display: block;
+  /* width: calc(100% - 440px); */
+  width: 100%;
+  height: auto;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+}
+
+/* Слайдер */
+.slider-controls {
+  /* width: 600px;
+    height: 120px; */
+  background-color: #030303;
+  z-index: 2;
+  font-size: 22px;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 60%;
+  height: 16%;
+  position: absolute;
+  right: 0;
+  bottom: -8%;
+}
+
+/* Точки слайдера */
+.slider__dot {
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  margin-right: 20px;
+}
+.slider__dot_active {
+  background-color: #d2b183;
+}
+
+/* Стрелки слайдера */
+.slider__arrows {
+  width: 80px;
+  justify-content: space-between;
+}
+.slider__arrow {
+  width: 30px;
+  height: 8px;
+}
+.slider__arrow_right {
+  background-image: url(../assets/svg/arrowRight.svg);
+}
+.slider__arrow_left {
+  background-image: url(../assets/svg/arrowLeft.svg);
+}
+.slider__arrow:hover {
+  cursor: pointer;
+}

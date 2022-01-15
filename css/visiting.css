@@ -1,0 +1,5 @@
+.visiting__cards {
+  flex-flow: wrap;
+  justify-content: space-between;
+  /* padding: 75px 0 75px 0; */
+}

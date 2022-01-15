@@ -1,159 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/dark-section.css">
-    <link rel="stylesheet" href="css/light-section.css">
-    <link rel="stylesheet" href="css/header.css">
 
-    <!-- linking fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet"> 
-    
-    <title>Louvre Museum</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/welcome.css">
+  <link rel="stylesheet" href="css/visiting.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/explore.css">
+  <link rel="stylesheet" href="css/video.css">
+  <link rel="stylesheet" href="css/grid-test.css">
+
+  <!-- linking fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+  <title>Louvre Museum</title>
 </head>
+
 <body>
   <header id="header">
-      <div class="container flex">
-          <div class="logoHeader">
-            <!-- <img src="assets/img/icons/logo.png" alt="logo"> -->
-            <div class="logoImg"></div>
-            <h3>
-              <a href="#header">Louvre</a>
-            </h3>
-          </div>
-          <nav>
-            <ul class="flex-wrap">
-              <li><a href="#visiting">Visiting</a></li>
-              <li><a href="#explore">Explore</a></li>
-              <li><a href="#video">Video</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#tickets">Tickets</a></li>
-              <li><a href="#contacts" class="navContacts">Contacts</a></li>
-            </ul>
-          </nav>
+    <div class="container flex">
+      <div class="logoHeader">
+        <!-- <img src="assets/img/icons/logo.png" alt="logo"> -->
+        <div class="logoImg"></div>
+        <h3>
+          <a href="#header">Louvre</a>
+        </h3>
       </div>
+      <nav>
+        <ul class="flex-wrap">
+          <li><a href="#visiting">Visiting</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#tickets">Tickets</a></li>
+          <li><a href="#contacts" class="navContacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-    <main>
-        <div class="bgWrapper-dark"> <!-- для заливки фона за пределами контейнера -->
-            <div class="container">
-                <!-- Welcome Section -->
-                <section class="flex darkSection">
+  <main>
+    <div class="bg-wrapper_dark">
+      <!-- для заливки фона за пределами контейнера -->
+      <div class="container">
+        <!-- Welcome Section -->
+        <section class="flex dark-section">
 
-                        <div class="darkLeft">
-                            <h2>Welcome</h2>
-                            <h2>To the Louvre</h2>
-                            <p>From the castle to the museum</p>
-                            <a class="button" href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover the Louvre</a>
-                        </div>
-                        <div class="sliderFull">
-                          <div class="mask">
-                            <img class="sliderImg" src="assets/img/welcome-slider/1.jpg" alt="1_MonaLisa">
-                          </div>   
-                          <!-- Slider -->
-                          <div class="slider flex">
-                            <p>01 | 05</p>
-                              <div class="sliderDots flex">
-                                <div class="sliderDot activeDot"></div>  <!-- activeDot - выделяется цветом -->
-                                <div class="sliderDot"></div>
-                                <div class="sliderDot"></div>
-                                <div class="sliderDot"></div>
-                                <div class="sliderDot"></div>
-                              </div>
-                            <div class="sliderArrows flex">
-                              <div class="sliderArrow arrowLeft"></div>
-                              <div class="sliderArrow arrowRight"></div>
-                            </div>
-                          </div>
-                        </div>    
-
-                </section>
-                
-                
+          <div class="dark-left">
+            <h2 class="section__title">Welcome</h2>
+            <h2 class="section__title">To the Louvre</h2>
+            <p>From the castle to the museum</p>
+            <a class="button"
+              href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover
+              the Louvre</a>
+            <!-- <iframe class="button" src="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" frameborder="0">Discover the Louvre</iframe> -->
+          </div>
+          <div class="slider">
+            <div class="slider__mask">
+              <img class="slider__img" src="assets/img/welcome-slider/1.jpg" alt="1_MonaLisa">
             </div>
+            <!-- Slider -->
+            <div class="slider-controls flex">
+              <p>01 | 05</p>
+              <div class="slider__dots flex">
+                <div class="slider__dot slider__dot_active"></div> <!-- выделяется цветом -->
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+              </div>
+              <div class="slider__arrows flex">
+                <div class="slider__arrow slider__arrow_left"></div>
+                <div class="slider__arrow slider__arrow_right"></div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+      </div>
+    </div>
+    <section id="visiting" class="section_center flex section_light">
+      <div class="bg-wrapper_light">
+        <div class="section_padding">
+          <div class="container">
+            <div class="underline-title">
+              <h2 class="section__title text_gold">Virtual tour</h2>
+            </div>
+            <div class="visiting__cards flex">
+              <div class="card">
+                <a
+                  href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815">
+                  <div>
+                    <img src="assets/img/visiting/royal-palace.jpg" class="card__img" alt="royal-palace">
+                    <h4 class="card__title card-underline">Royal palace</h4>
+                    <p class="card__info">360° Virtual Tour</p>
+                    <p class="card__description">Google Street Panorama View</p>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a
+                  href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500">
+                  <div>
+                    <img src="assets/img/visiting/denon-wing.jpg" class="card__img" alt="denon-wing">
+                    <h4 class="card__title card-underline">Denon wing</h4>
+                    <p class="card__info">360° Virtual Tour</p>
+                    <p class="card__description">Google Street Panorama View</p>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a
+                  href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120">
+                  <div>
+                    <img src="assets/img/visiting/colonnade-perrault.jpg" class="card__img" alt="colonnade-perrault">
+                    <h4 class="card__title card-underline">Colonnade perrault</h4>
+                    <p class="card__info">360° Virtual Tour</p>
+                    <p class="card__description">Google Street Panorama View</p>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a
+                  href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736">
+                  <div>
+                    <img src="assets/img/visiting/greek-hall.jpg" class="card__img" alt="greek-hall">
+                    <h4 class="card__title card-underline">Greek hall</h4>
+                    <p class="card__info">360° Virtual Tour</p>
+                    <p class="card__description">Google Street Panorama View</p>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a
+                  href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120">
+                  <div>
+                    <img src="assets/img/visiting/mona-lisa.jpg" class="card__img" alt="mona-lisa">
+                    <h4 class="card__title card-underline">Mona lisa</h4>
+                    <p class="card__info">360° Virtual Tour</p>
+                    <p class="card__description">Google Street Panorama View</p>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a
+                  href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652">
+                  <div>
+                    <img src="assets/img/visiting/night-palace.jpg" class="card__img" alt="night-palace">
+                    <h4 class="card__title card-underline">Night palace</h4>
+                    <p class="card__info">360° Virtual Tour</p>
+                    <p class="card__description">Google Street Panorama View</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <section id="visiting" class="section flex light-section">
-          <div class="bgWrapper-light"> <!-- для заливки фона за пределами контейнера -->
-            <div class="container">
-              <div class="title underline-title"><h2>Virtual tour</h2></div>
-              <div class="visitingCards flex">
-                <div class="card">
-                <a href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815">
-                  <div>
-                    <img src="assets/img/visiting/royal-palace.jpg" class="cardImg" alt="royal-palace">
-                    <h4 class="cardTitle card-underline">Royal palace</h4>
-                    <p class="cardInfo">360° Virtual Tour</p>
-                    <p class="cardDescription">Google Street Panorama View</p>
-                  </div>
-                </a>
+      </div>
+    </section>
+    <section id="explore" class="section">
+      <div class="bg-wrapper_dark">
+        <div class="section_padding">
+          <div class="container flex">
+            <div class="explore-container">
+              <div class="explore__description">
+                <div class="underline-title">
+                  <h2 class="section__title">Picture explore</h2>
                 </div>
-                <div class="card">
-                <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500">
-                  <div>
-                    <img src="assets/img/visiting/denon-wing.jpg" class="cardImg" alt="denon-wing">
-                    <h4 class="cardTitle card-underline">Denon wing</h4>
-                    <p class="cardInfo">360° Virtual Tour</p>
-                    <p class="cardDescription">Google Street Panorama View</p>
-                  </div>
-                </a>
+                <div class="explore__description_padding-vert">
+                  <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.
+                  </p>
+                  <p>It was cleaned in 1984 to remove a <span class="text_gold">"yellow veil"</span> of dust that had
+                    gathered since the previous restoration in the 19th century.</p>
+                  <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but
+                    because it looked different.</p>
                 </div>
-                <div class="card">
-                <a href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120">
-                  <div>
-                    <img src="assets/img/visiting/colonnade-perrault.jpg" class="cardImg" alt="colonnade-perrault">
-                    <h4 class="cardTitle card-underline">Colonnade perrault</h4>
-                    <p class="cardInfo">360° Virtual Tour</p>
-                    <p class="cardDescription">Google Street Panorama View</p>
+              </div>
+              <div class="explore-slider__container">
+                <div class="explore-slider">
+                  <div class="explore-slider__after">
+                    <img src="assets/img/explore-slider/after.jpg" alt="after.jpg">
                   </div>
-                </a>
-                </div>
-                <div class="card">
-                <a href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736">
-                  <div>
-                    <img src="assets/img/visiting/greek-hall.jpg" class="cardImg" alt="greek-hall">
-                    <h4 class="cardTitle card-underline">Greek hall</h4>
-                    <p class="cardInfo">360° Virtual Tour</p>
-                    <p class="cardDescription">Google Street Panorama View</p>
+                  <div class="explore-slider__control">
+
                   </div>
-                </a>
-                </div>
-                <div class="card">
-                <a href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120">
-                  <div>
-                    <img src="assets/img/visiting/mona-lisa.jpg" class="cardImg" alt="mona-lisa">
-                    <h4 class="cardTitle card-underline">Mona lisa</h4>
-                    <p class="cardInfo">360° Virtual Tour</p>
-                    <p class="cardDescription">Google Street Panorama View</p>
-                  </div>
-                </a>
-                </div>
-                <div class="card">
-                <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652">
-                  <div>
-                    <img src="assets/img/visiting/night-palace.jpg" class="cardImg" alt="night-palace">
-                    <h4 class="cardTitle card-underline">Night palace</h4>
-                    <p class="cardInfo">360° Virtual Tour</p>
-                    <p class="cardDescription">Google Street Panorama View</p>
-                  </div>
-                </a>
                 </div>
               </div>
             </div>
-          </div>  
-        </section>
-        <section id="explore"></section>
-        <section id="video"></section>
-        <section id="gallery"></section>
-        <section id="tickets"></section>
-        <section id="contacts"></section>
-    </main>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="video">
+      <div class="bg-wrapper_light">
+        <div class="section_padding">
+          <div class="container">
+            <div class="video-container flex">
+              <div class="video-grid">
+                <h2 class="section__title text_gold video-grid__title">Video journey</h2>
+                <p class="text_black video-grid__description">Enter and visit one of the most famous museums in the
+                  world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                <div class="video-player video-grid__player">
+                  <div class="video-player__poster"><div class="play-icon"></div></div>
+                  <div class="video-player__controls">
+                    <div class="controls__play cursor-pointer"><div class="controls__btn-opacity"></div></div>
+                    <input type="range" value="35" min="0" max="100" class="controls__progress cursor-pointer">
+                    <div class="controls__mute cursor-pointer"><div class="controls__btn-opacity"></div></div>
+                    <input type="range" value="75" min="0" max="100" class="controls__volume cursor-pointer">
+                    <div class="controls__fullscreen cursor-pointer"><div class="controls__btn-opacity"></div></div>
+                  </div>
+                </div>
+                
+                  <div class="video-grid__video-1"></div>
+                  <div class="video-grid__video-2"></div>
+                  <div class="video-grid__video-3"></div>
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="grid">
+      <div class="bg-wrapper_light">
+        <div class="section_padding">
+          <div class="container">
+            <div class="grid-test">
+              <div class="item-1"></div>
+              <div class="item-2"></div>
+              <div class="item-3"></div>
+              <div class="item-4"></div>
+              <div class="item-5"></div>
+              <div class="item-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="gallery"></section>
+    <section id="tickets"></section>
+    <section id="contacts"></section>
+  </main>
 </body>
+
 </html>
