@@ -141,7 +141,7 @@ html {
   right: 0;
   height: 3px;
   width: 70%;
-  background-color: red;
+  background-color: #710707;
   display: block;
   transition: 0.5s;
 }
@@ -166,4 +166,12 @@ html {
 
 .cursor-pointer:hover {
   cursor: pointer;
+}
+
+/* .img-block {
+  display: block;
+} */
+
+.title-padding {
+  padding-bottom: 8%;
 }
