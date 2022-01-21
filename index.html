@@ -267,7 +267,7 @@
             <h2 class="section__title title-padding">Art gallery</h2>
             <div class="picture-container">
               <div class="picture-inner-container flex">
-                <img src="assets/img/galery/galery2.jpg" class="gallery-picture img-block" alt="galery2.jpg">
+                <img src="assets/img/galery/galery2.jpg" class="gallery-picture img-block pic-1" alt="galery2.jpg">
                 <img src="assets/img/galery/galery9.jpg" class="gallery-picture img-block" alt="galery9.jpg">
                 <img src="assets/img/galery/galery4.jpg" class="gallery-picture img-block" alt="galery4.jpg">
                 <img src="assets/img/galery/galery6.jpg" class="gallery-picture img-block" alt="galery6.jpg">
@@ -276,12 +276,12 @@
                 <img src="assets/img/galery/galery8.jpg" class="gallery-picture img-block" alt="galery8.jpg">
                 <img src="assets/img/galery/galery13.jpg" class="gallery-picture img-block" alt="galery13.jpg">
                 <img src="assets/img/galery/galery5.jpg" class="gallery-picture img-block" alt="galery5.jpg">
-                <img src="assets/img/galery/galery3.jpg" class="gallery-picture img-block" 0 alt="galery3.jpg">
-                <img src="assets/img/galery/galery7.jpg" class="gallery-picture img-block" 1 alt="galery7.jpg">
-                <img src="assets/img/galery/galery14.jpg" class="gallery-picture img-block" 2 alt="galery14.jpg">
-                <img src="assets/img/galery/galery15.jpg" class="gallery-picture img-block" 3 alt="galery15.jpg">
-                <img src="assets/img/galery/galery12.jpg" class="gallery-picture img-block" 4 alt="galery12.jpg">
-                <img src="assets/img/galery/galery10.jpg" class="gallery-picture img-block" 5 alt="galery10.jpg">
+                <img src="assets/img/galery/galery3.jpg" class="gallery-picture img-block" alt="galery3.jpg">
+                <img src="assets/img/galery/galery7.jpg" class="gallery-picture img-block pic-11" alt="galery7.jpg">
+                <img src="assets/img/galery/galery14.jpg" class="gallery-picture img-block" alt="galery14.jpg">
+                <img src="assets/img/galery/galery15.jpg" class="gallery-picture img-block" alt="galery15.jpg">
+                <img src="assets/img/galery/galery12.jpg" class="gallery-picture img-block" alt="galery12.jpg">
+                <img src="assets/img/galery/galery10.jpg" class="gallery-picture img-block" alt="galery10.jpg">
               </div>
             </div>
 
@@ -298,24 +298,41 @@
             </div>
             <div class="tickets-container">
               <div class="tickets-pic">
-                <img src="assets/img/tickets-pic.png" alt="tickets-picture">
+                <img class="img-block" src="assets/img/tickets-pic.png" alt="tickets-picture">
               </div>
               <div class="tickets-form">
                 <div class="ticket-type">
                   <h5 class="form__h5">Ticket type</h5>
-
-                  <label class="form__label" for="ticket-type__1">
-                    <input class="form__radio" type="radio" name="ticket-type" id="ticket-type__1">
-                    Permanent exhibition
-                  </label> <br>
-                  <label class="form__label" for="ticket-type__2">
-                    <input class="form__radio" type="radio" name="ticket-type" id="ticket-type__2">
-                    Temporary exhibition
-                  </label> <br>
-                  <label class="form__label" for="ticket-type__1">
-                    <input class="form__radio" type="radio" name="ticket-type" id="ticket-type__3">
-                    Combined Admission
-                  </label><br>
+                  <div class="tickets-radio">
+                    <label class="form__label" for="ticket-type__1">
+                      <input class="form__radio" type="radio" name="ticket-type" id="ticket-type__1">
+                      Permanent exhibition
+                    </label><br>
+                    <label class="form__label" for="ticket-type__2">
+                      <input class="form__radio" type="radio" name="ticket-type" id="ticket-type__2">
+                      Temporary exhibition
+                    </label><br>
+                    <label class="form__label" for="ticket-type__3">
+                      <input class="form__radio" type="radio" name="ticket-type" id="ticket-type__3">
+                      Combined Admission
+                    </label><br>
+                  </div>
+                </div>
+                <div class="ticket-amount">
+                  <h5 class="form__h5">Amount</h5>
+                  <p class="text_black">Basic 18+</p>
+                  <div class="amount__inputs">
+                    <div class="amount__btn">-</div>
+                    <input class="amount__number" type="number" min="0" max="20" value="0" readonly>
+                    <div class="amount__btn">+</div>
+                  </div>
+                  <p class="text_black">Senior 65+</p>
+                  <div class="amount__inputs">
+                    <div class="amount__btn">-</div>
+                    <input class="amount__number" type="number" min="0" max="20" value="0" readonly>
+                    <div class="amount__btn">+</div>
+                  </div>
+                  <h6 class="form__h5 amount__total">Total: -</h6>
                 </div>
               </div>
             </div>

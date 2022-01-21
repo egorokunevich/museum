@@ -69,9 +69,15 @@
   height: 16px;
   background-color: #ffffff;
   margin-right: 20px;
+  transition: 0.2s;
 }
 .slider__dot_active {
   background-color: #d2b183;
+}
+
+.slider__dot:hover {
+  cursor: pointer;
+  filter: invert(50%) sepia(100%) brightness(110%);
 }
 
 /* Стрелки слайдера */
@@ -82,6 +88,7 @@
 .slider__arrow {
   width: 30px;
   height: 8px;
+  transition: 0.2s;
 }
 .slider__arrow_right {
   background-image: url(../assets/svg/arrowRight.svg);
@@ -91,4 +98,5 @@
 }
 .slider__arrow:hover {
   cursor: pointer;
+  filter: invert(50%) sepia(100%) brightness(110%);
 }
