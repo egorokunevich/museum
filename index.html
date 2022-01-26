@@ -15,11 +15,12 @@
   <link rel="stylesheet" href="css/video.css">
   <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="css/tickets.css">
+  <link rel="stylesheet" href="css/contacts.css">
 
   <!-- linking fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
   <title>Louvre Museum</title>
@@ -32,64 +33,61 @@
         <!-- <img src="assets/img/icons/logo.png" alt="logo"> -->
         <div class="logoImg"></div>
         <h3>
-          <a href="#header">Louvre</a>
+          <a class="link-spacing" href="#header">Louvre</a>
         </h3>
       </div>
       <nav>
         <ul class="flex-wrap">
-          <li><a href="#visiting">Visiting</a></li>
-          <li><a href="#explore">Explore</a></li>
-          <li><a href="#video">Video</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#tickets">Tickets</a></li>
-          <li><a href="#contacts" class="navContacts">Contacts</a></li>
+          <li><a class="nav-link link-spacing" href="#visiting">Visiting</a></li>
+          <li><a class="nav-link link-spacing" href="#explore">Explore</a></li>
+          <li><a class="nav-link link-spacing" href="#video">Video</a></li>
+          <li><a class="nav-link link-spacing" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link link-spacing" href="#tickets">Tickets</a></li>
+          <li class="navContacts"><a class="nav-link link-spacing" href="#contacts" class="navContacts">Contacts</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="bg-wrapper_dark">
-      <!-- для заливки фона за пределами контейнера -->
-      <div class="container">
-        <!-- Welcome Section -->
-        <section class="flex dark-section">
-
-          <div class="dark-left">
-            <h2 class="section__title">Welcome</h2>
-            <h2 class="section__title">To the Louvre</h2>
-            <p>From the castle to the museum</p>
-            <a class="button"
-              href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover
-              the Louvre</a>
-            <!-- <iframe class="button" src="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" frameborder="0">Discover the Louvre</iframe> -->
-          </div>
-          <div class="slider">
-            <div class="slider__mask">
-              <img class="slider__img" src="assets/img/welcome-slider/1.jpg" alt="1_MonaLisa">
+    <section id="welcome" class="section">
+      <div class="bg-wrapper_dark">
+        <!-- для заливки фона за пределами контейнера -->
+        <div class="container">
+          <div class="welcome-container">
+            <div class="dark-left">
+              <h2 class="section__title">Welcome</h2>
+              <h2 class="section__title">To the Louvre</h2>
+              <p>From the castle to the museum</p>
+              <a class="button link-spacing"
+                href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover
+                the Louvre</a>
+              <!-- <iframe class="button" src="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" frameborder="0">Discover the Louvre</iframe> -->
             </div>
-            <!-- Slider -->
-            <div class="slider-controls flex">
-              <p>01 | 05</p>
-              <div class="slider__dots flex">
-                <div class="slider__dot slider__dot_active"></div> <!-- выделяется цветом -->
-                <div class="slider__dot"></div>
-                <div class="slider__dot"></div>
-                <div class="slider__dot"></div>
-                <div class="slider__dot"></div>
+            <div class="slider">
+              <div class="slider__mask">
+                <img class="slider__img" src="assets/img/welcome-slider/1.jpg" alt="1_MonaLisa">
               </div>
-              <div class="slider__arrows flex">
-                <div class="slider__arrow slider__arrow_left"></div>
-                <div class="slider__arrow slider__arrow_right"></div>
+              <!-- Slider -->
+              <div class="slider-controls flex">
+                <p>01 | 05</p>
+                <div class="slider__dots flex">
+                  <div class="slider__dot slider__dot_active"></div> <!-- выделяется цветом -->
+                  <div class="slider__dot"></div>
+                  <div class="slider__dot"></div>
+                  <div class="slider__dot"></div>
+                  <div class="slider__dot"></div>
+                </div>
+                <div class="slider__arrows flex">
+                  <div class="slider__arrow slider__arrow_left"></div>
+                  <div class="slider__arrow slider__arrow_right"></div>
+                </div>
               </div>
             </div>
           </div>
-
-        </section>
-
-
+        </div>
       </div>
-    </div>
+    </section>
     <section id="visiting" class="section_center flex section_light">
       <div class="bg-wrapper_light">
         <div class="section_padding">
@@ -99,7 +97,7 @@
             </div>
             <div class="visiting__cards flex">
               <div class="card">
-                <a
+                <a class="link-spacing"
                   href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815">
                   <div>
                     <img src="assets/img/visiting/royal-palace.jpg" class="card__img" alt="royal-palace">
@@ -110,7 +108,7 @@
                 </a>
               </div>
               <div class="card">
-                <a
+                <a class="link-spacing" 
                   href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500">
                   <div>
                     <img src="assets/img/visiting/denon-wing.jpg" class="card__img" alt="denon-wing">
@@ -121,7 +119,7 @@
                 </a>
               </div>
               <div class="card">
-                <a
+                <a class="link-spacing"
                   href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120">
                   <div>
                     <img src="assets/img/visiting/colonnade-perrault.jpg" class="card__img" alt="colonnade-perrault">
@@ -132,7 +130,7 @@
                 </a>
               </div>
               <div class="card">
-                <a
+                <a class="link-spacing"
                   href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736">
                   <div>
                     <img src="assets/img/visiting/greek-hall.jpg" class="card__img" alt="greek-hall">
@@ -143,7 +141,7 @@
                 </a>
               </div>
               <div class="card">
-                <a
+                <a class="link-spacing"
                   href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120">
                   <div>
                     <img src="assets/img/visiting/mona-lisa.jpg" class="card__img" alt="mona-lisa">
@@ -154,7 +152,7 @@
                 </a>
               </div>
               <div class="card">
-                <a
+                <a class="link-spacing"
                   href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652">
                   <div>
                     <img src="assets/img/visiting/night-palace.jpg" class="card__img" alt="night-palace">
@@ -190,10 +188,9 @@
               <div class="explore-slider__container">
                 <div class="explore-slider">
                   <div class="explore-slider__after">
-                    <img src="assets/img/explore-slider/after.jpg" alt="after.jpg">
+                    <img class="img-block img-scale" src="assets/img/explore-slider/after.jpg" alt="after.jpg">
                   </div>
                   <div class="explore-slider__control">
-
                   </div>
                 </div>
               </div>
@@ -298,41 +295,46 @@
             </div>
             <div class="tickets-container">
               <div class="tickets-pic">
-                <img class="img-block" src="assets/img/tickets-pic.png" alt="tickets-picture">
+                <img class="img-block img-scale" src="assets/img/tickets-pic.png" alt="tickets-picture">
               </div>
               <div class="tickets-form">
                 <div class="ticket-type">
-                  <h5 class="form__h5">Ticket type</h5>
+                  <h5 class="form__title">Ticket type</h5>
                   <div class="tickets-radio">
-                    <label class="form__label" for="ticket-type__1">
-                      <input class="form__radio" type="radio" name="ticket-type" id="ticket-type__1">
-                      Permanent exhibition
-                    </label><br>
-                    <label class="form__label" for="ticket-type__2">
-                      <input class="form__radio" type="radio" name="ticket-type" id="ticket-type__2">
-                      Temporary exhibition
-                    </label><br>
-                    <label class="form__label" for="ticket-type__3">
-                      <input class="form__radio" type="radio" name="ticket-type" id="ticket-type__3">
-                      Combined Admission
-                    </label><br>
+                    <div>
+                      <input type="radio" name="radio-btn__ticket" id="ticket-1" checked> <label for="ticket-1"
+                        class="form__label">Permanent exhibition</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="radio-btn__ticket" id="ticket-2"> <label for="ticket-2"
+                        class="form__label">Temporary exhibition</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="radio-btn__ticket" id="ticket-3"> <label for="ticket-3"
+                        class="form__label">Combined Admission</label>
+                    </div>
                   </div>
                 </div>
                 <div class="ticket-amount">
-                  <h5 class="form__h5">Amount</h5>
-                  <p class="text_black">Basic 18+</p>
-                  <div class="amount__inputs">
-                    <div class="amount__btn">-</div>
-                    <input class="amount__number" type="number" min="0" max="20" value="0" readonly>
-                    <div class="amount__btn">+</div>
+                  <h5 class="form__title">Amount</h5>
+                  <div class="amount__container">
+                    <p class="text_black">Basic 18+</p>
+                    <div class="amount__inputs">
+                      <div class="amount__btn">-</div>
+                      <input class="amount__number" type="number" min="0" max="20" value="0" readonly>
+                      <div class="amount__btn">+</div>
+                    </div>
                   </div>
-                  <p class="text_black">Senior 65+</p>
-                  <div class="amount__inputs">
-                    <div class="amount__btn">-</div>
-                    <input class="amount__number" type="number" min="0" max="20" value="0" readonly>
-                    <div class="amount__btn">+</div>
+                  <div class="amount__container">
+                    <p class="text_black">Senior 65+</p>
+                    <div class="amount__inputs">
+                      <div class="amount__btn">-</div>
+                      <input class="amount__number" type="number" min="0" max="20" value="0" readonly>
+                      <div class="amount__btn">+</div>
+                    </div>
                   </div>
-                  <h6 class="form__h5 amount__total">Total: -</h6>
+                  <h6 class="form__title amount__total">Total: €200</h6>
+                  <button class="amount__btn_buy">Buy now</button>
                 </div>
               </div>
             </div>
@@ -340,7 +342,33 @@
         </div>
       </div>
     </section>
-    <section id="contacts"></section>
+    <section id="parallax">
+      <div class="parallax"></div>
+    </section>
+    <section id="contacts">
+      <div class="bg-wrapper_light">
+        <div class="section_padding">
+          <div class="container">
+            <div class="underline-title">
+              <h2 class="section__title text_gold">Buy tickets</h2>
+            </div>
+            <div class="contacts-container">
+              <div class="contacts-info">
+                <h5 class="form__title contacts__title">Palais Royal Musee du Louvre</h5>
+                <ul class="contacts__list">
+                  <li class="text_black contacts__link">address: 75001 Paris, France</li>
+                  <li class="contacts__link"><a class="text_black" href="tel:+330140205050">phone: +33(0) 1 40 20 50 50</a></li>
+                  <li class="contacts__link"><a class="text_black" href="mailto:info@louvre.fr">mail: info@louvre.fr</a></li>
+                </ul>
+              </div>
+              <div class="contacts-map">
+                <img class="img-block map-img" src="assets/img/contacts-map.jpg" alt="contacts-map">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 

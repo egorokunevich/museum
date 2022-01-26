@@ -1,6 +1,7 @@
-a {
+.nav-link {
     text-decoration: none;
     letter-spacing: 2px;
+    font-weight: 200;
 }
 
 header {
@@ -23,7 +24,8 @@ nav {
 } */
 
 .navContacts{
-    margin-right: 0;
+    /* margin-right: 0; */
+    padding-right: 0;
 }
 
 .logoHeader h3 a{

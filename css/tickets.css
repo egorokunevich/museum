@@ -20,21 +20,88 @@
   padding: 0 0 0 5%;
 }
 
-.tickets-radio {
-  height: 100%;
-}
-
-.form__h5 {
+.form__title {
   color: black;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 28px;
   margin-top: 0;
+  margin-bottom: 30%;
 }
 
+/* Стилизация radio */
 .form__label {
+  display: inline-block;
     color: black;
     margin-bottom: 50px;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+{
+    /* position: absolute;
+    left: -9999px; */
+    display: none;
+}
+
+input[type="radio"]:checked + .form__label, 
+input[type="radio"]:not(:checked) + .form__label {
+    display: inline-block;
+    position: relative;
+    /* padding-left: 28px; */
+    line-height: 20px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .form__label:before, 
+input[type="radio"]:not(:checked) + .form__label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+}
+
+input[type="radio"]:checked + .form__label:before, 
+input[type="radio"]:not(:checked) + .form__label:before {
+    border-radius: 100%;
+}
+
+input[type="radio"]:checked + .form__label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="radio"]:checked + .form__label:after {
+    left: 0;
+    top: 0;
+    transform: translate(75%, 75%);
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+.form__label:hover{
+  cursor: pointer;
+  color: #710707;
+}
+
+
+.ticket-amount {
+  max-width: 150px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
 }
 
 .amount__inputs {
@@ -49,6 +116,29 @@
 
 .amount__number {
   width: 50%;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  /* Убирает стрелки в input[type="number"] */
+  -moz-appearance: textfield;
+}
+
+.amount__number_total {
+  text-align: left;
+  width: 10%;
+}
+
+
+/* Убирает стрелки в input[type="number"] */
+.amount__number:hover,
+.amount__number:focus {
+  -moz-appearance: number-input;
+}
+.amount__number::-webkit-outer-spin-button,
+.amount__number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .amount__btn {
@@ -57,4 +147,31 @@
   font-family: "Roboto", sans-serif;
   width: 33%;
   text-align: center;
+  font-weight: 500;
 }
+
+.amount__btn:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.amount__total {
+  margin: 20% 0;
+}
+
+.amount__btn_buy {
+  border: none;
+  width: 175px;
+  height: 50px;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+}
+
+.amount__btn_buy:hover {
+  cursor: pointer;
+  background-color: #710707;
+  border: solid 3px rgb(0, 0, 0);
+}
+
