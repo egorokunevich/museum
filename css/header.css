@@ -1,21 +1,15 @@
-.nav-link {
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: 200;
-}
-
 header {
     background-color: #030303;
     height: 150px;
 }
 
-li {
+.header__li {
     list-style: none;
     padding: 1em;
     line-height: 100%;
 }
 
-nav {
+.header__nav {
     max-width: 775px;
 }
 
@@ -23,21 +17,12 @@ nav {
     margin-right: 2.5em;
 } */
 
-.navContacts{
+.nav__contacts{
     /* margin-right: 0; */
     padding-right: 0;
 }
 
-.logoHeader h3 a{
-    font-family: 'Forum', cursive;
-    font-weight: 300;
-    margin-left: 0.5em;
-    letter-spacing: 5px;
-    font-size: 28px;
-    text-transform: uppercase;
-}
-
-.logoHeader {
+.header__logo {
     display: flex;
     align-items: center;
 }

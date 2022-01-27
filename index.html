@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="css/tickets.css">
   <link rel="stylesheet" href="css/contacts.css">
+  <link rel="stylesheet" href="css/footer.css">
 
   <!-- linking fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,21 +30,22 @@
 <body>
   <header id="header">
     <div class="container flex">
-      <div class="logoHeader">
+      <div class="header__logo">
         <!-- <img src="assets/img/icons/logo.png" alt="logo"> -->
         <div class="logoImg"></div>
         <h3>
-          <a class="link-spacing" href="#header">Louvre</a>
+          <a class="link-spacing logo__title" href="#header">Louvre</a>
         </h3>
       </div>
-      <nav>
+      <nav class="header__nav">
         <ul class="flex-wrap">
-          <li><a class="nav-link link-spacing" href="#visiting">Visiting</a></li>
-          <li><a class="nav-link link-spacing" href="#explore">Explore</a></li>
-          <li><a class="nav-link link-spacing" href="#video">Video</a></li>
-          <li><a class="nav-link link-spacing" href="#gallery">Gallery</a></li>
-          <li><a class="nav-link link-spacing" href="#tickets">Tickets</a></li>
-          <li class="navContacts"><a class="nav-link link-spacing" href="#contacts" class="navContacts">Contacts</a></li>
+          <li class="header__li"><a class="nav-link link-spacing" href="#visiting">Visiting</a></li>
+          <li class="header__li"><a class="nav-link link-spacing" href="#explore">Explore</a></li>
+          <li class="header__li"><a class="nav-link link-spacing" href="#video">Video</a></li>
+          <li class="header__li"><a class="nav-link link-spacing" href="#gallery">Gallery</a></li>
+          <li class="header__li"><a class="nav-link link-spacing" href="#tickets">Tickets</a></li>
+          <li class="header__li navContacts"><a class="nav-link link-spacing" href="#contacts" class="navContacts">Contacts</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -108,7 +110,7 @@
                 </a>
               </div>
               <div class="card">
-                <a class="link-spacing" 
+                <a class="link-spacing"
                   href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500">
                   <div>
                     <img src="assets/img/visiting/denon-wing.jpg" class="card__img" alt="denon-wing">
@@ -176,14 +178,14 @@
                 <div class="underline-title">
                   <h2 class="section__title">Picture explore</h2>
                 </div>
-                <div class="explore__description_padding-vert">
+                <article class="explore__description_padding-vert">
                   <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.
                   </p>
                   <p>It was cleaned in 1984 to remove a <span class="text_gold">"yellow veil"</span> of dust that had
                     gathered since the previous restoration in the 19th century.</p>
                   <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but
                     because it looked different.</p>
-                </div>
+                </article>
               </div>
               <div class="explore-slider__container">
                 <div class="explore-slider">
@@ -357,8 +359,10 @@
                 <h5 class="form__title contacts__title">Palais Royal Musee du Louvre</h5>
                 <ul class="contacts__list">
                   <li class="text_black contacts__link">address: 75001 Paris, France</li>
-                  <li class="contacts__link"><a class="text_black" href="tel:+330140205050">phone: +33(0) 1 40 20 50 50</a></li>
-                  <li class="contacts__link"><a class="text_black" href="mailto:info@louvre.fr">mail: info@louvre.fr</a></li>
+                  <li class="contacts__link"><a class="text_black" href="tel:+330140205050">phone: +33(0) 1 40 20 50
+                      50</a></li>
+                  <li class="contacts__link"><a class="text_black" href="mailto:info@louvre.fr">mail: info@louvre.fr</a>
+                  </li>
                 </ul>
               </div>
               <div class="contacts-map">
@@ -370,6 +374,59 @@
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="bg-wrapper_dark">
+      <div class="footer-padding">
+        <div class="container">
+          <div class="footer-container">
+            <div class="footer-info">
+              <div class="footer__logo">
+                <div class="logoImg"></div>
+                <h3 class="logo__footer-title">
+                  <a class="link-spacing logo__title" href="#header">Louvre</a>
+                </h3>
+              </div>
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li class="footer__li"><a class="nav-link link-spacing" href="#visiting">Visiting</a></li>
+                  <li class="footer__li"><a class="nav-link link-spacing" href="#explore">Explore</a></li>
+                  <li class="footer__li"><a class="nav-link link-spacing" href="#video">Video</a></li>
+                  <li class="footer__li"><a class="nav-link link-spacing" href="#gallery">Gallery</a></li>
+                  <li class="footer__li"><a class="nav-link link-spacing" href="#tickets">Tickets</a></li>
+                  <li class="footer__li navContacts"><a class="nav-link link-spacing" href="#contacts"
+                      class="navContacts">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__socials-container">
+              <ul class="footer__socials">
+                <li class="socials__thumb thumb__youtube"><a class="socials__link" href="https://www.youtube.com/user/louvre" target="blank"></a></li>
+                <li class="socials__thumb thumb__instagram"><a class="socials__link" href="https://www.instagram.com/museelouvre/" target="blank"></a></li>
+                <li class="socials__thumb thumb__facebook"><a class="socials__link" href="https://www.facebook.com/museedulouvre" target="blank"></a></li>
+                <li class="socials__thumb thumb__twitter"><a class="socials__link" href="http://twitter.com/museelouvre" target="blank"></a></li>
+                <li class="socials__thumb thumb__pinterest"><a class="socials__link" href="https://www.pinterest.fr/museedulouvre/" target="blank"></a></li>
+              </ul>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="section-authors">
+    <div class="bg-wrapper_dark">
+      <div class="authors_padding">
+        <div class="container">
+          <div class="footer__authors">
+            <p class="font_thin">© 2021</p>
+            <p class="font_thin">The Rolling Scopes School</p>
+            <p class="font_thin">egorokunevich</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </body>
 
 </html>

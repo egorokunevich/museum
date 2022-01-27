@@ -41,6 +41,27 @@
   color: #9d8665;
 } */
 
+.logo__title {
+  font-family: "Forum", cursive;
+  font-weight: 300;
+  margin-left: 1em;
+  letter-spacing: 5px;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+/* Ссылка в навигации */
+.nav-link {
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 100;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #9d8665;
+}
+
 .text_gold {
   color: #9d8665;
 }
@@ -49,11 +70,16 @@
   color: #030303;
 }
 
+.font_thin {
+  font-weight: 100;
+}
+
+/* Для заливки фона вне контейнера белых секций. По идее, можно не использовать */
 .bg-wrapper_light {
   background-color: #ffffff;
 }
 
-/* Для заливки фона вне контейнера */
+/* Для заливки фона вне контейнера черных секций*/
 .bg-wrapper_dark {
   background-color: #030303;
 }
@@ -82,8 +108,7 @@ h4 {
   background-color: #710707;
 }
 
-/* Button */
-
+/* Кнопка, для Welcome */
 .button {
   width: 360px;
   height: 75px;
@@ -98,10 +123,7 @@ h4 {
   /* letter-spacing: 2px; */
 }
 
-/* .button a {
-    display: inline-block;
-} */
-
+/* Для плавной прокрутки страницы */
 html {
   scroll-behavior: smooth;
 }
