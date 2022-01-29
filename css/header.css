@@ -1,4 +1,4 @@
-header {
+.header {
     background-color: #030303;
     height: 150px;
 }
@@ -31,4 +31,14 @@ header {
     width: 49px;
     height: 26px;
     background-image: url("../assets/svg/logo.svg");
+}
+
+@media (max-width: 1024px) {
+    .header {
+        height: 130px;
+    }
+
+    .header__nav {
+        display: none;
+    }
 }

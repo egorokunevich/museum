@@ -78,4 +78,26 @@
   padding: 50px 0 50px 0;
 }
 
+@media (max-width: 1024px) {
+  .explore-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .explore__3rd-paragraph {
+    display: none;
+  }
+
+  .explore__description {
+    max-width: 984px;
+    width: 100%;
+  }
+
+  .explore-slider__control::after {
+  top: 105%;
+  left: calc(50% - 3px);
+  right: calc(50% - 3px);
+  width: 6px;
+  }
+}

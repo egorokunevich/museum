@@ -84,15 +84,6 @@
   background-color: #030303;
 }
 
-h4 {
-  font-family: "Forum", cursive;
-  font-size: 32px;
-  font-weight: 100;
-  margin: 0 0;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-
 /* Подчеркивание заголовка */
 .underline-title {
   position: relative;
@@ -120,7 +111,7 @@ h4 {
   justify-content: center;
   border-radius: 10px;
   font-size: 22px;
-  /* letter-spacing: 2px; */
+  z-index: 3;
 }
 
 /* Для плавной прокрутки страницы */
@@ -144,9 +135,9 @@ html {
 /* Card */
 
 .card {
-  /* margin: 25px 0; */
-  /* padding: 0 0 75px 0; */
   margin-top: 75px;
+  max-width: calc((100% - 120px)/3);
+  width: 100%;
 }
 
 .card__info {
@@ -154,6 +145,12 @@ html {
 }
 
 .card__title {
+  font-family: "Forum", cursive;
+  font-size: 32px;
+  font-weight: 100;
+  margin: 0 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   margin: 15px 0;
   color: #030303;
 }
@@ -217,4 +214,28 @@ html {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+@media (max-width: 1024px) {
+  * {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 984px;
+  }
+
+  .section__title {
+    font-size: 50px;
+  }
+
+  .card {
+    max-width: calc((100% - 314px)/2 + 5px);
+    min-width: 330px;
+  }
+  .card__title {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+
 }

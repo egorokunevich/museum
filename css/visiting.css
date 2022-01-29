@@ -1,5 +1,21 @@
 .visiting__cards {
-  flex-flow: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   /* padding: 75px 0 75px 0; */
+}
+
+.card__img {
+  max-width: 440px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .visiting__cards {
+    justify-content: space-evenly;
+  }
+
+  .card__img {
+    max-width: 330px;
+  }
 }
