@@ -16,6 +16,7 @@
 .contacts__list {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .contacts-container {
@@ -32,4 +33,10 @@
     max-width: 960px;
     width: 100%;
     height: auto;
+}
+
+@media (max-width: 1024px) {
+    .map-img {
+        max-width: 694px;
+    }
 }

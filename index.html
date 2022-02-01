@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/tickets.css">
   <link rel="stylesheet" href="css/contacts.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/booking.css">
 
   <!-- linking fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +45,8 @@
           <li class="header__li"><a class="nav-link link-spacing" href="#video">Video</a></li>
           <li class="header__li"><a class="nav-link link-spacing" href="#gallery">Gallery</a></li>
           <li class="header__li"><a class="nav-link link-spacing" href="#tickets">Tickets</a></li>
-          <li class="header__li navContacts"><a class="nav-link link-spacing" href="#contacts" class="navContacts">Contacts</a>
+          <li class="header__li navContacts"><a class="nav-link link-spacing" href="#contacts"
+              class="navContacts">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -183,7 +185,8 @@
                   </p>
                   <p>It was cleaned in 1984 to remove a <span class="text_gold">"yellow veil"</span> of dust that had
                     gathered since the previous restoration in the 19th century.</p>
-                  <p class="explore__3rd-paragraph">The cleaning provoked furious protests, not because the picture had been damaged in any way, but
+                  <p class="explore__3rd-paragraph">The cleaning provoked furious protests, not because the picture had
+                    been damaged in any way, but
                     because it looked different.</p>
                 </article>
               </div>
@@ -207,8 +210,8 @@
           <div class="container">
             <div class="video-container flex">
               <div class="video-grid">
-                <h2 class="section__title text_gold video-grid__title">Video journey</h2>
-                <p class="text_black video-grid__description">Enter and visit one of the most famous museums in the
+                <h2 class="section__title text_gold video__title">Video journey</h2>
+                <p class="text_black video__description">Enter and visit one of the most famous museums in the
                   world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
                 <div class="video-player video-grid__player">
                   <div class="video-player__poster">
@@ -230,15 +233,15 @@
                 </div>
                 <div class="video-grid__playlist">
                   <div class="playlist__videos">
-                    <iframe width="452" height="254" src="https://www.youtube.com/embed/zp1BXPX8jcU"
+                    <iframe class="video-yt" width="452" height="254" src="https://www.youtube.com/embed/zp1BXPX8jcU"
                       title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen></iframe>
-                    <iframe width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo"
+                    <iframe class="video-yt" width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo"
                       title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen></iframe>
-                    <iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY"
+                    <iframe class="video-yt" width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY"
                       title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen></iframe>
@@ -296,8 +299,8 @@
               <h2 class="section__title text_gold">Buy tickets</h2>
             </div>
             <div class="tickets-container">
-              <div class="tickets-pic">
-                <img class="img-block img-scale" src="assets/img/tickets-pic.png" alt="tickets-picture">
+              <div class="tickets-pic-container">
+                <img class="img-block tickets-pic" src="assets/img/tickets-pic.png" alt="tickets-picture">
               </div>
               <div class="tickets-form">
                 <div class="ticket-type">
@@ -401,13 +404,18 @@
             </div>
             <div class="footer__socials-container">
               <ul class="footer__socials">
-                <li class="socials__thumb thumb__youtube"><a class="socials__link" href="https://www.youtube.com/user/louvre" target="blank"></a></li>
-                <li class="socials__thumb thumb__instagram"><a class="socials__link" href="https://www.instagram.com/museelouvre/" target="blank"></a></li>
-                <li class="socials__thumb thumb__facebook"><a class="socials__link" href="https://www.facebook.com/museedulouvre" target="blank"></a></li>
-                <li class="socials__thumb thumb__twitter"><a class="socials__link" href="http://twitter.com/museelouvre" target="blank"></a></li>
-                <li class="socials__thumb thumb__pinterest"><a class="socials__link" href="https://www.pinterest.fr/museedulouvre/" target="blank"></a></li>
+                <li class="socials__thumb thumb__youtube"><a class="socials__link"
+                    href="https://www.youtube.com/user/louvre" target="blank"></a></li>
+                <li class="socials__thumb thumb__instagram"><a class="socials__link"
+                    href="https://www.instagram.com/museelouvre/" target="blank"></a></li>
+                <li class="socials__thumb thumb__facebook"><a class="socials__link"
+                    href="https://www.facebook.com/museedulouvre" target="blank"></a></li>
+                <li class="socials__thumb thumb__twitter"><a class="socials__link" href="http://twitter.com/museelouvre"
+                    target="blank"></a></li>
+                <li class="socials__thumb thumb__pinterest"><a class="socials__link"
+                    href="https://www.pinterest.fr/museedulouvre/" target="blank"></a></li>
               </ul>
-            </div> 
+            </div>
           </div>
         </div>
       </div>
@@ -426,7 +434,60 @@
       </div>
     </div>
   </div>
-  
+
+  <div class="booking">
+    <div class="bg-wrapper_transparent">
+      <div class="container">
+        <div class="booking-container section_padding">
+          <div class="booking__tickets">
+            <div class="booking__header">
+              <div class="booking__logo"></div>
+              <h2 class="section__title text_gold booking__title">Booking tickets</h2>
+              <p class="text_black">Tour to Louvre</p>
+              <div class="booking__underline"></div>
+            </div>
+            <form action="" class="booking-form">
+              <div class="form__date-time">
+                <label for="date" class="booking-form__label booking-form__label_date"><input placeholder="Date" type="date"
+                    class="input__date text_black booking-form__input">
+                </label>
+                <label for="time" class="booking-form__label booking-form__label_time"><input placeholder="Time" type="time"
+                    class="input__time text_black booking-form__input">
+                </label>
+              </div>
+              <label for="name" class="booking-form__label booking-form__label_name">
+                <input placeholder="Name" type="text" class="input__text text_black booking-form__input">
+              </label>
+              <label for="email" class="booking-form__label booking-form__label_email">
+                <input placeholder="E-mail" type="email" name="" id=""
+                  class="input__text text_black booking-form__input">
+              </label>
+              <label for="phone" class="booking-form__label booking-form__label_phone">
+                <input placeholder="Phone" type="tel" name="" id="" class="input__text text_black booking-form__input">
+              </label>
+              <label for="select" class="booking-form__label booking-form__label_select">
+                <select class="select__header text_black" name="select__ticket-type" id="">
+                  <option class="select__option text_black" value="Temporary exhibition">Temporary exhibition</option>
+                  <option class="select__option text_black" value="Permanent exhibition">Permanent exhibition</option>
+                  <option class="select__option text_black" value="Combined Admission">Combined Admission</option>
+                </select>
+              </label>
+              <div class="booking-entry">
+                <p class="booking-entry__title text_gold">Entry ticket</p>
+                <div class="booking-entry__ticket_basic">
+                  <p class="text_black booking-entry__ticket_">Basic 18+ (20 €)</p>
+                  <p class="text_black">Senior 65+ (10 €)</p>
+                </div>
+                <div class="booking-entry__ticket_senior"></div>
+              </div>
+            </form>
+          </div>
+          <div class="booking__overview"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

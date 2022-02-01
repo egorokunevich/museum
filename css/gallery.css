@@ -22,19 +22,35 @@
 
 .picture-inner-container {
   width: 100%;
-  height: calc(2900px);
+  height: 2900px;
   display: flex;
   flex-flow: column wrap;
   row-gap: 24px;
-  column-gap: 24px;
+  column-gap: 36px;
 }
 
 .gallery-picture {
-  max-width: calc((100% - 48px) / 3);
+  max-width: calc((100% - 72px) / 3);
+  /* max-width: 456px; */
   width: 100%;
   height: auto;
 }
 
 .pic-1, .pic-11 {
   margin-top: 5%;
+}
+
+@media (max-width: 1024px) {
+  .picture-container {
+    max-height: 1220px;
+  }
+.picture-inner-container {
+  height: 2200px;
+  column-gap: 26px;
+  row-gap: 20px;
+}
+
+  .gallery-picture {
+    max-width: calc((100% - 78px) / 3);
+  }
 }
