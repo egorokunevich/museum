@@ -1,0 +1,141 @@
+.welcome-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Контент с левой стороны секции */
+.dark-left {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: visible;
+  z-index: 100;
+  font-size: 28px;
+  padding: calc(25% - 196px) 0 calc(50% - 415.7px) 0;
+}
+
+.welcome-info {
+  z-index: 3;
+}
+
+.slider {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% - 440px);
+}
+
+.slider__mask {
+  position: relative;
+  width: 100%;
+}
+
+/* Изображения слайдера в Welcome (правая сторона секции) */
+.slider__img {
+  display: block;
+  /* width: calc(100% - 440px); */
+  width: 100%;
+  height: auto;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+}
+
+/* Слайдер */
+.slider-controls {
+  /* width: 600px;
+    height: 120px; */
+  background-color: #030303;
+  z-index: 2;
+  font-size: 22px;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  max-height: 120px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+
+  /* на некоторых разрешениях слайдер выходит за границу секции без этого пикселя */
+  bottom: calc(-8% + 1px);
+
+  
+}
+
+/* Точки слайдера */
+.slider__dot {
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  margin-right: 20px;
+  transition: 0.2s;
+}
+.slider__dot_active {
+  background-color: #d2b183;
+}
+
+.slider__dot:hover {
+  cursor: pointer;
+  filter: invert(50%) sepia(100%) brightness(110%);
+}
+
+/* Стрелки слайдера */
+.slider__arrows {
+  width: 80px;
+  justify-content: space-between;
+}
+.slider__arrow {
+  width: 30px;
+  height: 8px;
+  transition: 0.2s;
+}
+.slider__arrow_right {
+  background-image: url(../assets/svg/arrowRight.svg);
+}
+.slider__arrow_left {
+  background-image: url(../assets/svg/arrowLeft.svg);
+}
+.slider__arrow:hover {
+  cursor: pointer;
+  filter: invert(50%) sepia(100%) brightness(110%);
+}
+
+@media (max-width: 1024px) {
+  .slider {
+    max-width: 700px;
+    width: calc(100% - 300px);
+    height: auto;
+  }
+
+  .slider-controls {
+    width: 100%;
+    height: 100%;
+    bottom: -60px;
+  }
+  .slider__img {
+    max-width: 700px;
+    max-height: 525px;
+    width: 100%;
+    height: auto;
+    bottom: -60px;
+  }
+
+  .slider__dot {
+    width: 12px;
+    height: 12px;
+    margin-right: 16px;
+  }
+
+  .welcome-container {
+    min-height: 585px;
+  }
+}

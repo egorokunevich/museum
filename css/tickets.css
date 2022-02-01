@@ -1,0 +1,139 @@
+.tickets-container {
+  width: 100%;
+  padding: 5% 0 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.tickets-pic-container {
+width: 720px;
+height: 550px;
+  /* background-image: url(../assets/img/tickets-pic.png); */
+}
+
+.tickets-pic {
+  max-width: 720px;
+  width: 100%;
+  max-height: 550px;
+  height: auto;
+  
+}
+
+.tickets-form {
+  width: calc(100% / 2);
+  color: #030303;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 0 5%;
+}
+
+.ticket-amount {
+  max-width: 150px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+
+.amount__inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 3px black;
+  box-sizing: border-box;
+  min-height: 50px;
+  width: 150px;
+}
+
+.amount__number {
+  width: 50%;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  /* Убирает стрелки в input[type="number"] */
+  -moz-appearance: textfield;
+}
+
+.amount__number_total {
+  text-align: left;
+  width: 10%;
+}
+
+
+/* Убирает стрелки в input[type="number"] */
+.amount__number:hover,
+.amount__number:focus {
+  -moz-appearance: number-input;
+}
+.amount__number::-webkit-outer-spin-button,
+.amount__number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.amount__btn {
+  color: black;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  width: 33%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.amount__btn:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.amount__total {
+  margin: 20% 0;
+}
+
+.amount__btn_buy {
+  border: none;
+  width: 175px;
+  height: 50px;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+}
+
+.amount__btn_buy:hover {
+  cursor: pointer;
+  background-color: #710707;
+  border: solid 3px rgb(0, 0, 0);
+}
+
+@media (max-width: 1024px) {
+  .tickets-pic-container {
+    width: 700px;
+    height: 440px;
+  }
+
+  .tickets-pic {
+    max-width: 700px;
+    width: 700px;
+    max-height: 440px;
+    height: auto;
+  }
+
+  .ticket-type {
+    display: none;
+  }
+
+  .tickets-form {
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  .ticket-amount {
+    max-height: 440px;
+  }
+}

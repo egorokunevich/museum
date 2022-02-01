@@ -1,20 +1,15 @@
-a {
-    text-decoration: none;
-    letter-spacing: 2px;
-}
-
-header {
+.header {
     background-color: #030303;
     height: 150px;
 }
 
-li {
+.header__li {
     list-style: none;
     padding: 1em;
     line-height: 100%;
 }
 
-nav {
+.header__nav {
     max-width: 775px;
 }
 
@@ -22,20 +17,12 @@ nav {
     margin-right: 2.5em;
 } */
 
-.navContacts{
-    margin-right: 0;
+.nav__contacts{
+    /* margin-right: 0; */
+    padding-right: 0;
 }
 
-.logoHeader h3 a{
-    font-family: 'Forum', cursive;
-    font-weight: 300;
-    margin-left: 0.5em;
-    letter-spacing: 5px;
-    font-size: 28px;
-    text-transform: uppercase;
-}
-
-.logoHeader {
+.header__logo {
     display: flex;
     align-items: center;
 }
@@ -44,4 +31,14 @@ nav {
     width: 49px;
     height: 26px;
     background-image: url("../assets/svg/logo.svg");
+}
+
+@media (max-width: 1024px) {
+    .header {
+        height: 130px;
+    }
+
+    .header__nav {
+        display: none;
+    }
 }

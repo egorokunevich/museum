@@ -1,58 +1,322 @@
 * {
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
 }
 
 .container {
-    max-width: 1440px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    position: relative;
-    height: 100%;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .flex-wrap {
-    display: flex;
-    flex-flow: wrap;
+  display: flex;
+  flex-flow: wrap;
 }
 
-a {
-    letter-spacing: 2px;
+.link-spacing {
+  letter-spacing: 2px;
 }
 
-h2{
-    font-family: 'Forum', cursive;
-    font-size: 80px;
-    font-weight: 100;
-    margin: 0 0;
-    text-transform: uppercase;
+.section__title {
+  font-family: "Forum", cursive;
+  font-size: 80px;
+  font-weight: 100;
+  margin: 0 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  z-index: 3;
 }
 
-/* Button */
-
-.button {
-    width: 360px;
-    height: 75px;
-    padding: 2em;
-    background-color: #710707;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    font-size: 22px;
-}
-
-/* .button a {
-    display: inline-block;
+/* .section__title_gold {
+  color: #9d8665;
 } */
 
+.logo__title {
+  font-family: "Forum", cursive;
+  font-weight: 300;
+  margin-left: 1em;
+  letter-spacing: 5px;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+/* Ссылка в навигации */
+.nav-link {
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 100;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #9d8665;
+}
+
+.text_gold {
+  color: #9d8665;
+}
+
+.text_black {
+  color: #030303;
+}
+
+.font_thin {
+  font-weight: 100;
+}
+
+/* Для заливки фона вне контейнера белых секций. По идее, можно не использовать */
+.bg-wrapper_light {
+  background-color: #ffffff;
+}
+
+/* Для заливки фона вне контейнера черных секций*/
+.bg-wrapper_dark {
+  background-color: #030303;
+}
+
+/* Подчеркивание заголовка */
+.underline-title {
+  position: relative;
+  margin-bottom: 25px;
+}
+.underline-title::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #710707;
+}
+
+/* Кнопка, для Welcome */
+.button {
+  width: 360px;
+  height: 75px;
+  padding: 2em;
+  background-color: #710707;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 22px;
+  z-index: 3;
+}
+
+/* Для плавной прокрутки страницы */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.section_center {
+  align-items: center;
+  justify-content: center;
+}
+
+.section_padding {
+  padding: 75px 0 75px 0;
+}
+
+.section_padding-up {
+  padding: 75px 0 0 0;
+}
+
+/* Card */
+
+.card {
+  margin-top: 75px;
+  max-width: calc((100% - 120px)/3);
+  width: 100%;
+}
+
+.card__info {
+  color: #030303;
+}
+
+.card__title {
+  font-family: "Forum", cursive;
+  font-size: 32px;
+  font-weight: 100;
+  margin: 0 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 15px 0;
+  color: #030303;
+}
+
+.card-underline {
+  position: relative;
+}
+
+.card-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 70%;
+  background-color: #710707;
+  display: block;
+  transition: 0.5s;
+}
+
+/* .card-underline::after:hover {
+  width: 20px;
+} */
+
+.card:hover .card-underline::after {
+  width: 100%;
+}
+
+.card__description {
+  font-size: 18px;
+  color: #030303;
+  margin-block-end: 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.img-block {
+  display: block;
+}
+
+.img-scale {
+  width: 100%;
+  height: auto;
+}
+
+.title-padding {
+  padding-bottom: 8%;
+}
+
+.parallax {
+  width: 100%;
+  height: 400px;
+  background-image: url(../assets/img/parallax.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Форма в секции Tickets */
+.form__title {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 30%;
+}
+
+/* Стилизация radio */
+.form__label {
+  display: inline-block;
+    color: black;
+    margin-bottom: 50px;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+{
+    /* position: absolute;
+    left: -9999px; */
+    display: none;
+}
+
+input[type="radio"]:checked + .form__label, 
+input[type="radio"]:not(:checked) + .form__label {
+    display: inline-block;
+    position: relative;
+    /* padding-left: 28px; */
+    line-height: 20px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .form__label:before, 
+input[type="radio"]:not(:checked) + .form__label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+}
+
+input[type="radio"]:checked + .form__label:before, 
+input[type="radio"]:not(:checked) + .form__label:before {
+    border-radius: 100%;
+}
+
+input[type="radio"]:checked + .form__label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="radio"]:checked + .form__label:after {
+    left: 0;
+    top: 0;
+    transform: translate(75%, 75%);
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+.form__label:hover{
+  cursor: pointer;
+  color: #710707;
+}
+
+@media (max-width: 1024px) {
+  * {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 984px;
+  }
+
+  .section__title {
+    font-size: 50px;
+  }
+
+  .card {
+    max-width: calc((100% - 314px)/2 + 5px);
+    min-width: 330px;
+  }
+  .card__title {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+
+  .form__title {
+    font-size: 24px;
+  }
+
 }
