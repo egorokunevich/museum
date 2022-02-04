@@ -281,7 +281,7 @@ input[type="radio"]:checked + .form__label:after {
 input[type="radio"]:checked + .form__label:after {
     left: 0;
     top: 0;
-    transform: translate(75%, 75%);
+    transform: translate(82%, 82%);
     width: 9px;
     height: 9px;
     border-radius: 100%;
