@@ -293,6 +293,8 @@ input[type="radio"]:checked + .form__label:after {
   color: #710707;
 }
 
+
+/* Адаптация под 1024px */
 @media (max-width: 1024px) {
   * {
     font-size: 20px;

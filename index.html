@@ -474,11 +474,22 @@
               </label>
               <div class="booking-entry">
                 <p class="booking-entry__title text_gold">Entry ticket</p>
-                <div class="booking-entry__ticket_basic">
-                  <p class="text_black booking-entry__ticket_">Basic 18+ (20 €)</p>
+                <div class="booking-entry__ticket">
                   <p class="text_black">Senior 65+ (10 €)</p>
+                  <div class="booking__inputs">
+                    <div class="booking__btn">-</div>
+                    <input class="booking__number" type="number" min="0" max="20" value="0" readonly>
+                    <div class="booking__btn">+</div>
+                  </div>
                 </div>
-                <div class="booking-entry__ticket_senior"></div>
+                <div class="booking-entry__ticket">
+                  <p class="text_black booking-entry__ticket_">Basic 18+ (20 €)</p>
+                  <div class="booking__inputs">
+                    <div class="booking__btn">-</div>
+                    <input class="booking__number" type="number" min="0" max="20" value="0" readonly>
+                    <div class="booking__btn">+</div>
+                  </div>
+                </div>
               </div>
             </form>
           </div>

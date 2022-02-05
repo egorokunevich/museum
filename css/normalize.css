@@ -357,3 +357,19 @@
   a {
     text-decoration: none;
 }
+
+input[type="number"] {
+  /* Убирает стрелки в input[type="number"] */
+  -moz-appearance: textfield;
+}
+
+/* Убирает стрелки в input[type="number"] */
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

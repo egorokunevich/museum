@@ -63,24 +63,11 @@
   text-align: center;
   font-weight: bold;
   border: none;
-  /* Убирает стрелки в input[type="number"] */
-  -moz-appearance: textfield;
 }
 
 .amount__number_total {
   text-align: left;
   width: 10%;
-}
-
-/* Убирает стрелки в input[type="number"] */
-.amount__number:hover,
-.amount__number:focus {
-  -moz-appearance: number-input;
-}
-.amount__number::-webkit-outer-spin-button,
-.amount__number::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 .amount__btn {
