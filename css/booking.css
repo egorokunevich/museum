@@ -1,3 +1,54 @@
+.booking-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.booking-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  column-gap: 40px;
+  padding: 90px 0 90px 0;
+  position: relative;
+}
+
+/* Close button */
+.booking__close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  width: 25px;
+  height: 25px;
+}
+
+.booking__close::before {
+  content: "";
+  width: 1px;
+  height: 25px;
+  transform: skew(45deg);
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.booking__close::after {
+  content: "";
+  width: 1px;
+  height: 25px;
+  transform: skew(135deg);
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.booking__close:hover {
+  cursor: pointer;
+}
+
 .booking__tickets {
   max-width: 400px;
 }
@@ -17,11 +68,16 @@
   letter-spacing: 0;
 }
 
+.booking__subtitle {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
 .booking__underline {
   width: 100%;
-  height: 3px;
+  height: 2px;
   background-color: #740c11;
-  margin-bottom: 75px;
+  margin-bottom: 60px;
 }
 
 /* form */
@@ -167,7 +223,7 @@
 /* Убирает иконки календаря и часов в хроме */
 .input__date::-webkit-calendar-picker-indicator,
 .input__time::-webkit-calendar-picker-indicator {
-    display: none;
+  display: none;
 }
 
 .form__date-time {
@@ -209,6 +265,8 @@
 .booking-entry {
   padding: 15px;
   border: 1px solid black;
+  max-height: 135px;
+  box-sizing: border-box;
 }
 
 .booking-entry__title {
@@ -222,9 +280,10 @@
   content: "";
   display: block;
   margin-top: 5px;
-  height: 1px;
+  height: 2px;
   width: 100%;
   background-color: black;
+  margin-bottom: 10px;
 }
 
 .booking__inputs {
@@ -243,6 +302,7 @@
 .booking__number {
   box-sizing: border-box;
   max-width: 35px;
+  max-height: 25px;
   margin: 0;
   padding: 0;
   color: black;
@@ -261,10 +321,10 @@
   max-width: 35px;
   width: 100%;
   max-height: 25px;
-  height: 100%;
+  height: 25px;
   text-align: center;
   font-weight: 200;
-  transition: 0.2s;
+  transition: 0.1s;
   line-height: 1.1;
 }
 
@@ -274,7 +334,12 @@
   background-color: #e2e2e2;
   color: black;
   border: 1px solid black;
-  font-weight: 500;
+  /* font-weight: 500; */
+}
+
+.booking__btn:active {
+  background-color: #740c11;
+  color: white;
 }
 
 .booking-entry__ticket {
@@ -283,4 +348,232 @@
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  height: 25px;
+  margin: 10px 0;
+}
+
+.booking-entry__text {
+  font-size: 18px;
+}
+
+/* Overwiew */
+
+.booking__overview {
+  box-sizing: border-box;
+  max-width: 530px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 25px 30px;
+}
+
+.overview__title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 32px;
+  color: #272727;
+}
+
+.overview__subtitle {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #740c11;
+}
+
+.overview__info {
+  padding-left: 30px;
+  font-weight: 300;
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+
+.overview__date::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../assets/svg/form-date.svg);
+}
+
+.overview__time::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../assets/svg/form-time.svg);
+}
+
+.overview__ticket-type::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../assets/svg/form-check.svg);
+  margin-bottom: 20px;
+}
+
+.overview__ticket-type {
+  margin-bottom: 25px;
+}
+
+.ticket-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.ticket__name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.ticket__count {
+  width: 32px;
+  height: 20px;
+  background-color: #272727;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+.overview-total {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.overview__underline {
+  width: 100%;
+  height: 2px;
+  background-color: #740c11;
+  margin-bottom: 10px;
+}
+
+.overview-total__total,
+.overview-total__amount {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.overview__card-info {
+  position: relative;
+  min-height: 240px;
+}
+
+.credit-card__front {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 360px;
+  height: 210px;
+  background-color: #bcbcbc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.credit-card__front::before {
+  content: "";
+  width: 55px;
+  height: 16px;
+  display: block;
+  background-image: url(../assets/img/overview-visa.png);
+  position: absolute;
+  top: 34px;
+  right: 20px;
+  background-repeat: no-repeat;
+}
+
+.credit-card__front::after {
+  content: "";
+  width: 55px;
+  height: 32px;
+  display: block;
+  background-image: url(../assets/img/overview-mastercard.png);
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  background-repeat: no-repeat;
+}
+
+.credit-card__number,
+.credit-card__expiration-date,
+.credit-card__cardholder {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 12px;
+  max-width: 215px;
+}
+
+.credit-card__input_number,
+.credit-card__input_cardholder {
+  max-width: 215px;
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  outline: none;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.credit-card__expiration-date {
+  margin-top: 10px;
+}
+
+.expiration-inputs {
+  display: flex;
+  flex-direction: row;
+  max-width: 215px;
+  justify-content: space-between;
+}
+
+.credit-card__input_month,
+.credit-card__input_year {
+  width: 100px;
+  height: 35px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.credit-card__cardholder {
+  margin-top: 10px;
+  max-width: 320px;
+}
+
+.credit-card__input_cardholder {
+  max-width: 320px;
+  width: 100%;
+}
+
+.credit-card__back {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 360px;
+  height: 210px;
+  background-color: #939393;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  z-index: -1;
 }

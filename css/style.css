@@ -1,5 +1,5 @@
 * {
-  color: #ffffff;
+  /* color: #ffffff; */
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 22px;
@@ -48,6 +48,7 @@
   letter-spacing: 5px;
   font-size: 28px;
   text-transform: uppercase;
+  color: white;
 }
 
 /* Ссылка в навигации */
@@ -56,6 +57,7 @@
   letter-spacing: 2px;
   font-weight: 100;
   transition: 0.2s;
+  color: white;
 }
 
 .nav-link:hover {
@@ -68,6 +70,10 @@
 
 .text_black {
   color: #030303;
+}
+
+.text_white {
+  color: white;
 }
 
 .font_thin {
