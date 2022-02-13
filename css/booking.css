@@ -638,3 +638,30 @@
   border: none;
   background-color: var(--color_gold);
 }
+
+@media (max-width: 768px) {
+  .booking-wrap {
+    max-width: 590px;
+  }
+
+  .booking-container {
+    flex-flow: column nowrap;
+    max-width: 550px;
+    row-gap: 50px;
+  }
+
+  .booking__tickets {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .booking-form__label_date,
+  .booking-form__label_time {
+    max-width: 275px;
+  }
+
+  .booking__overview {
+    max-width: 550px;
+    padding: 20px 25px;
+  }
+}
