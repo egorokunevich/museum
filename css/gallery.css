@@ -54,3 +54,17 @@
     max-width: calc((100% - 78px) / 3);
   }
 }
+
+@media (max-width: 768px) {
+  .picture-container {
+    max-height: 1080px;
+  }
+
+  .gallery-picture {
+    max-width: calc((100% - 20px) / 2);
+  }
+
+  .pic-1, .pic-11 {
+    margin-top: 0;
+  }
+}

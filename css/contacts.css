@@ -40,3 +40,24 @@
         max-width: 694px;
     }
 }
+
+@media (max-width: 768px) {
+    .contacts__title {
+        font-size: 20px;
+        max-width: 160px;
+        font-weight: 500;
+    }
+
+    .contacts-container {
+        flex-flow: column nowrap;
+    }
+
+    .contacts-map {
+        margin-top: 2%;
+    }
+
+    .map-img {
+        max-width: unset;
+        width: 100%;
+    }
+}

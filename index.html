@@ -50,6 +50,11 @@
           </li>
         </ul>
       </nav>
+      <div class="burger-menu">
+        <span class="burger__line burger__line_top"></span>
+        <span class="burger__line burger__line_mid"></span>
+        <span class="burger__line burger__line_bot"></span>
+      </div>
     </div>
   </header>
 
@@ -63,7 +68,7 @@
               <h2 class="section__title text_white">Welcome</h2>
               <h2 class="section__title text_white">To the Louvre</h2>
               <p class="welcome-info text_white">From the castle to the museum</p>
-              <a class="button link-spacing text_white"
+              <a class="welcome__btn link-spacing text_white"
                 href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover
                 the Louvre</a>
               <!-- <iframe class="button" src="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" frameborder="0">Discover the Louvre</iframe> -->
@@ -180,12 +185,15 @@
                 <div class="underline-title">
                   <h2 class="section__title text_white">Picture explore</h2>
                 </div>
-                <article class="explore__description explore__description_padding-vert">
-                  <p class="text_white">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.
+                <article class="explore__info explore__description_padding-vert">
+                  <p class="text_white">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the
+                    Spanish Golden Age.
                   </p>
-                  <p class="text_white">It was cleaned in 1984 to remove a <span class="text_gold">"yellow veil"</span> of dust that had
+                  <p class="text_white">It was cleaned in 1984 to remove a <span class="text_gold">"yellow veil"</span>
+                    of dust that had
                     gathered since the previous restoration in the 19th century.</p>
-                  <p class="explore__3rd-paragraph text_white">The cleaning provoked furious protests, not because the picture had
+                  <p class="explore__3rd-paragraph text_white">The cleaning provoked furious protests, not because the
+                    picture had
                     been damaged in any way, but
                     because it looked different.</p>
                 </article>
@@ -323,7 +331,7 @@
                 <div class="ticket-amount">
                   <h5 class="form__title">Amount</h5>
                   <div class="amount__container">
-                    <p class="text_black">Basic 18+</p>
+                    <p class="ticket-amount__ticket-name">Basic 18+</p>
                     <div class="amount__inputs">
                       <div class="amount__btn">-</div>
                       <input class="amount__number" type="number" min="0" max="20" value="0" readonly>
@@ -331,7 +339,7 @@
                     </div>
                   </div>
                   <div class="amount__container">
-                    <p class="text_black">Senior 65+</p>
+                    <p class="ticket-amount__ticket-name">Senior 65+</p>
                     <div class="amount__inputs">
                       <div class="amount__btn">-</div>
                       <input class="amount__number" type="number" min="0" max="20" value="0" readonly>
@@ -426,9 +434,9 @@
       <div class="authors_padding">
         <div class="container">
           <div class="footer__authors">
-            <p class="font_thin">© 2021</p>
-            <p class="font_thin">The Rolling Scopes School</p>
-            <p class="font_thin">egorokunevich</p>
+            <p class="font_thin text_white">© 2021</p>
+            <p class="font_thin text_white">The Rolling Scopes School</p>
+            <p class="font_thin text_white">egorokunevich</p>
           </div>
         </div>
       </div>
@@ -524,26 +532,36 @@
               </div>
             </div>
             <div class="overview__card-info">
-              <div class="credit-card__front">
-                <div class="credit-card__number">
+              <div class="card-front">
+                <div class="card-front__number">
                   Card number
-                  <input class="credit-card__input_number" type="number" name="card-number">
+                  <input class="card-front__input_number" type="number" name="card-number">
                 </div>
-                <div class="credit-card__expiration-date">
+                <div class="card-front__expiration-date">
                   Expiration date
                   <div class="expiration-inputs">
-                    <input class="credit-card__input_month" type="number" min="1" max="12" value="1">
-                    <input class="credit-card__input_year" type="number" min="2022" value="2024">
+                    <input class="card-front__input_month" type="number" min="1" max="12" value="1" name="card-month">
+                    <input class="card-front__input_year" type="number" min="2022" value="2024" name="card-year">
                   </div>
                 </div>
-                <div class="credit-card__cardholder">
+                <div class="card-front__cardholder">
                   Cardholder name
-                  <input class="credit-card__input_cardholder" type="number" name="card-number">
+                  <input class="card-front__input_cardholder" type="number" name="card-cardholder">
                 </div>
               </div>
-              <div class="credit-card__back">
-             
+              <div class="card-back">
+                <div class="card-back__magnet-line"></div>
+                <div class="card-back__content">
+                  <div class="card-back__code">
+                    CVC/CVV
+                    <input class="card-back__input_code" type="number" name="card-code">
+                  </div>
+                  <div class="card-back__info">The last 3 or 4 digits on back of the card</div>
+                </div>
               </div>
+            </div>
+            <div class="overview__book-button">
+              <button class="amount__btn_buy book-btn">Book</button>
             </div>
           </div>
         </div>

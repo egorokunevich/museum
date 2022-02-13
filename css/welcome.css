@@ -12,11 +12,32 @@
   overflow: visible;
   z-index: 100;
   font-size: 28px;
-  padding: calc(25% - 196px) 0 calc(50% - 415.7px) 0;
+  padding: calc(25% - 196px) 0 calc(51% - 415.7px) 0;
 }
 
 .welcome-info {
+  letter-spacing: 2px;
   z-index: 3;
+}
+
+/* Кнопка, для Welcome */
+.welcome__btn {
+  width: 360px;
+  height: 75px;
+  padding: 25px;
+  background-color: var(--color_dark-red);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 22px;
+  transition: 0.1s;
+  z-index: 3;
+}
+
+.welcome__btn:hover {
+  background-color: var(--color_gold);
 }
 
 .slider {
@@ -80,7 +101,7 @@
   transition: 0.2s;
 }
 .slider__dot_active {
-  background-color: #d2b183;
+  background-color: var(--color_gold);
 }
 
 .slider__dot:hover {
@@ -113,6 +134,7 @@
   .slider {
     max-width: 700px;
     width: calc(100% - 300px);
+    /* width: 100%; */
     height: auto;
   }
 
@@ -137,5 +159,59 @@
 
   .welcome-container {
     min-height: 585px;
+  }
+
+  .welcome__btn {
+    width: 300px;
+    height: 60px;
+    padding: 15px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dark-left {
+    align-items: center;
+  }
+
+  .welcome__btn {
+    display: none;
+  }
+
+  .slider {
+    position: relative;
+    max-width: 728px;
+    width: 100%;
+    padding-top: 4%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .slider__img {
+    max-width: 728px;
+    width: 100%;
+    max-height: 546px;
+    height: 100%;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .slider-controls {
+    position: relative;
+    max-width: 728px;
+    bottom: 0;
+    height: 100px;
+    justify-content: center;
+    column-gap: 20px;
   }
 }

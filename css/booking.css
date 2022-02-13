@@ -479,7 +479,7 @@
   min-height: 240px;
 }
 
-.credit-card__front {
+.card-front {
   display: flex;
   flex-flow: column nowrap;
   width: 360px;
@@ -489,9 +489,10 @@
   box-sizing: border-box;
   padding: 15px 20px;
   position: relative;
+  z-index: 2;
 }
 
-.credit-card__front::before {
+.card-front::before {
   content: "";
   width: 55px;
   height: 16px;
@@ -503,7 +504,7 @@
   background-repeat: no-repeat;
 }
 
-.credit-card__front::after {
+.card-front::after {
   content: "";
   width: 55px;
   height: 32px;
@@ -515,17 +516,18 @@
   background-repeat: no-repeat;
 }
 
-.credit-card__number,
-.credit-card__expiration-date,
-.credit-card__cardholder {
+.card-front__number,
+.card-front__expiration-date,
+.card-front__cardholder,
+.card-back__code {
   display: flex;
   flex-flow: column nowrap;
   font-size: 12px;
   max-width: 215px;
 }
 
-.credit-card__input_number,
-.credit-card__input_cardholder {
+.card-front__input_number,
+.card-front__input_cardholder {
   max-width: 215px;
   width: 100%;
   height: 35px;
@@ -535,7 +537,7 @@
   box-sizing: border-box;
 }
 
-.credit-card__expiration-date {
+.card-front__expiration-date {
   margin-top: 10px;
 }
 
@@ -546,8 +548,8 @@
   justify-content: space-between;
 }
 
-.credit-card__input_month,
-.credit-card__input_year {
+.card-front__input_month,
+.card-front__input_year {
   width: 100px;
   height: 35px;
   box-sizing: border-box;
@@ -555,17 +557,17 @@
   font-size: 16px;
 }
 
-.credit-card__cardholder {
+.card-front__cardholder {
   margin-top: 10px;
   max-width: 320px;
 }
 
-.credit-card__input_cardholder {
+.card-front__input_cardholder {
   max-width: 320px;
   width: 100%;
 }
 
-.credit-card__back {
+.card-back {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -575,5 +577,64 @@
   border-radius: 5px;
   box-sizing: border-box;
   padding: 15px 20px;
-  z-index: -1;
+  z-index: 1;
+}
+
+.card-back__magnet-line {
+  height: 45px;
+  width: 100%;
+  margin-top: 25px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.card-back__content {
+  padding-top: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 110px;
+  height: 140px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+}
+
+.card-back__input_code {
+  box-sizing: border-box;
+  width: 75px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.card-back__info {
+  font-size: 10px;
+  margin: 0 auto;
+  padding-top: 8px;
+  text-align: left;
+  max-width: 55px;
+  box-sizing: border-box;
+}
+
+.overview__book-button {
+  padding-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.book-btn {
+  width: 220px;
+  height: 45px;
+  background-color: var(--color_dark-red);
+  border: none;
+  transition: 0.1s;
+}
+
+.book-btn:hover {
+  border: none;
+  background-color: var(--color_gold);
 }

@@ -109,6 +109,7 @@
   height: 31px;
   background-image: url(../assets/svg/player-play.svg);
   margin: 0 30px;
+  box-sizing: border-box;
 }
 
 .player-controls__progress {
@@ -334,7 +335,7 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 input[type="range"]::-moz-range-progress {
-  background-color: #710707;
+  background-color: var(--color_dark-red);
   height: 10px;
 }
 
@@ -468,5 +469,40 @@ input[type="range"]::-moz-range-progress {
 
   input[type="range"]::-moz-range-progress {
     height: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video__title {
+    padding-bottom: 0;
+    max-height: 50px;
+  }
+
+  .video__grid:nth-child(-n+3) {
+    margin-bottom: -50px;
+  }
+
+  .video-player__controls {
+    max-height: 56px;
+    position: relative;
+  }
+
+  .player-controls__play {
+    margin: 0;
+    margin-left: 25px;
+  }
+
+  .player-controls__progress {
+    max-width: 728px;
+    position: absolute;
+    top: -15px;
+  }
+
+  .player-controls__volume {
+    max-width: 486px;
+  }
+
+  .player-controls__mute {
+    margin: 0 20px;
   }
 }

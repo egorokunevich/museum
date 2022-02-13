@@ -37,13 +37,12 @@
   bottom: calc(50% - 17px);
   width: 5%;
   height: 5%;
-  border: solid 6px;
+  border: solid 6px white;
   border-radius: 40px;
 }
 
 .explore-slider__control:hover {
   cursor: pointer;
-  
 }
 
 .explore-slider__control::before {
@@ -99,5 +98,15 @@
   left: calc(50% - 3px);
   right: calc(50% - 3px);
   width: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore__info {
+    display: none;
+  }
+
+  .explore-slider__container {
+    margin-top: 40px;
   }
 }

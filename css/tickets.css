@@ -108,7 +108,7 @@
 
 .amount__btn_buy:hover {
   cursor: pointer;
-  background-color: #710707;
+  background-color: var(--color_dark-red);
   border: solid 3px rgb(0, 0, 0);
 }
 
@@ -135,5 +135,28 @@
   }
   .ticket-amount {
     max-height: 440px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tickets-pic-container {
+    max-width: 60%;
+  }
+
+  .tickets-pic {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .ticket-amount {
+    align-items: flex-start;
+  }
+
+  .ticket-amount__ticket-name {
+    font-size: 22px;
+  }
+
+  .tickets-form {
+    justify-content: center;
   }
 }

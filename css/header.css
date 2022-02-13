@@ -33,6 +33,39 @@
     background-image: url("../assets/svg/logo.svg");
 }
 
+.burger-menu {
+    display: none;
+    max-width: 32px;
+    width: 100%;
+    height: 18px;
+    z-index: 5;
+    position: relative;
+}
+
+.burger-menu:hover {
+    cursor: pointer;
+}
+
+.burger__line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.burger__line_top {
+    top: 0;
+}
+
+.burger__line_mid {
+    top: 8px;
+}
+
+.burger__line_bot {
+    top: 16px;
+}
+
 @media (max-width: 1024px) {
     .header {
         height: 130px;
@@ -40,5 +73,9 @@
 
     .header__nav {
         display: none;
+    }
+
+    .burger-menu {
+        display: block;
     }
 }
