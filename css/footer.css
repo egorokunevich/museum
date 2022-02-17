@@ -165,6 +165,42 @@
     border: 2px solid rgb(255, 255, 255);
     filter: invert(50%) sepia(100%) brightness(110%);
   }
+}
 
-  
+@media (max-width: 420px) {
+  .footer__logo {
+    padding-bottom: 5%;
+  }
+
+  .footer-info {
+    flex-direction: column;
+  }
+
+  .footer__nav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer__list {
+    max-height: 70px;
+  }
+
+  .footer__socials-container {
+    margin: 0;
+    align-items: center;
+  }
+
+  .footer__socials {
+    column-gap: 8px;
+  }
+
+  .authors__school {
+    display: none;
+  }
+
+  .footer::after {
+    height: 2px;
+  }
 }

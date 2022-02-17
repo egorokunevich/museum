@@ -88,8 +88,6 @@
 
   /* на некоторых разрешениях слайдер выходит за границу секции без этого пикселя */
   bottom: calc(-8% + 1px);
-
-  
 }
 
 /* Точки слайдера */
@@ -213,5 +211,44 @@
     height: 100px;
     justify-content: center;
     column-gap: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .slider {
+    align-items: center;
+  }
+  
+  .slider__img {
+    max-width: 380px;
+    max-height: 285px;
+  }
+
+  .slider-controls {
+    max-width: 230px;
+    max-height: 40px;
+    padding: 20px 0;
+  }
+
+  .slider__dot {
+    width: 7px;
+    height: 7px;
+    margin-right: 10px;
+  }
+
+  .slider__arrows {
+    max-width: 55px;
+  }
+
+  .slider__arrow {
+    max-width: 20px;
+  }
+
+  .slider__arrow_right {
+    background-position: center right;
+  }
+
+  .welcome-container {
+    min-height: unset;
   }
 }

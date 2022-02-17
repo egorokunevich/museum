@@ -197,6 +197,7 @@
   width: 17px;
   height: 17px;
   background-image: url(../assets/svg/form-arrow.svg);
+  z-index: -1;
 }
 .booking-form__label_select::after {
   content: "";
@@ -207,7 +208,7 @@
   width: 17px;
   height: 17px;
   background-image: url(../assets/svg/form-arrow.svg);
-  z-index: 2;
+  z-index: -1;
 }
 
 .input__text {
@@ -239,11 +240,11 @@
 
 .select__header {
   border: none;
-  background-color: white;
+  background-color: transparent;
   border-radius: 0;
   box-sizing: border-box;
   height: 45px;
-  width: calc(400px - 55px);
+  width: calc(400px - 45px);
   font-size: 18px;
   padding: 0;
   margin: 0;
@@ -297,6 +298,8 @@
   max-height: 25px;
   width: 100%;
   height: 100%;
+  outline: 1px solid black;
+  
 }
 
 .booking__number {
@@ -309,12 +312,14 @@
   text-align: center;
   font-weight: bold;
   border: none;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .booking__btn {
   color: white;
   background-color: black;
-  font-size: 100%; /* 100% = 16px */
+  font-size: 22px;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   margin: 0;
@@ -323,18 +328,16 @@
   max-height: 25px;
   height: 25px;
   text-align: center;
-  font-weight: 200;
+  font-weight: 400;
   transition: 0.1s;
   line-height: 1.1;
+  outline: none;
 }
 
 .booking__btn:hover {
   cursor: pointer;
-  /* background-color: #740c11; */
   background-color: #e2e2e2;
   color: black;
-  border: 1px solid black;
-  /* font-weight: 500; */
 }
 
 .booking__btn:active {
@@ -639,6 +642,12 @@
   background-color: var(--color_gold);
 }
 
+@media (max-width: 1024px) {
+  .booking__number {
+    height: 25px;
+  }
+}
+
 @media (max-width: 768px) {
   .booking-wrap {
     max-width: 590px;
@@ -657,11 +666,78 @@
 
   .booking-form__label_date,
   .booking-form__label_time {
-    max-width: 275px;
+    max-width: 265px;
   }
 
   .booking__overview {
     max-width: 550px;
     padding: 20px 25px;
+  }
+
+  .input__text {
+    width: calc(550px - 45px);
+  }
+
+  .input__date,
+  .input__time {
+    width: calc(265px - 45px);
+  }
+
+  .select__header {
+    width: calc(550px - 45px);
+  }
+}
+
+@media (max-width: 420px) {
+  .booking-container {
+    padding: 75px 0 40px 0;
+  }
+
+  .booking__title {
+    font-size: 32px;
+  }
+
+  .booking-wrap {
+    max-width: 380px;
+  }
+
+  .form__date-time {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .booking-form__label_date,
+  .booking-form__label_time {
+    max-width: 380px;
+  }
+
+  .input__text {
+    width: calc(380px - 45px);
+  }
+
+  .input__date,
+  .input__time {
+    width: calc(380px - 45px);
+  }
+
+  .select__header {
+    width: calc(380px - 45px);
+  }
+
+  .overview__card-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  .card-front {
+    max-width: 330px;
+    max-height: 290px;
+  }
+
+  .card-back {
+    max-width: 330px;
+    max-height: 290px;
+    position: relative;
   }
 }

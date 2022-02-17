@@ -6,14 +6,15 @@
 
 .explore-slider__container {
   display: block;
-  width: 720px;
-  height: 700px;
+  width: 100%;
+  /* height: 700px; */
+  height: 100%;
 }
 
 .explore-slider {
   display: block;
   max-width: 720px;
-  width: 100%;
+  width: calc(100% - 40px);
   height: auto;
   /* background-image: url(../assets/img/explore-slider/before.jpg); */
   position: relative;
@@ -23,7 +24,7 @@
 
 .explore-slider__after {
   display: block;
-  width: 100;
+  width: 100%;
   height: auto;
   background-image: url(../assets/img/explore-slider/before.jpg);
   background-size: 100% 100%;
@@ -55,7 +56,7 @@
   width: 6px;
   transform: skew(180deg);
   background-color: #ffffff;
-} 
+}
 
 .explore-slider__control::after {
   content: "";
@@ -67,7 +68,7 @@
   width: 6px;
   transform: skew(180deg);
   background-color: #ffffff;
-} 
+}
 
 .explore__description {
   max-width: 660px;
@@ -84,6 +85,12 @@
     align-items: center;
   }
 
+  .explore-slider__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .explore__3rd-paragraph {
     display: none;
   }
@@ -94,10 +101,10 @@
   }
 
   .explore-slider__control::after {
-  top: 105%;
-  left: calc(50% - 3px);
-  right: calc(50% - 3px);
-  width: 6px;
+    top: 105%;
+    left: calc(50% - 3px);
+    right: calc(50% - 3px);
+    width: 6px;
   }
 }
 
@@ -108,5 +115,49 @@
 
   .explore-slider__container {
     margin-top: 40px;
+  }
+
+  .explore-slider {
+    max-width: 728px;
+  }
+}
+
+@media (max-width: 420px) {
+  .explore-slider {
+    max-width: 380px;
+  }
+
+  .explore-slider__container {
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 100%;
+  }
+
+  .explore-slider__control::after {
+    top: 105%;
+    left: calc(50% - 1px);
+    right: calc(50% - 1px);
+    width: 2px;
+  }
+
+  .explore-slider__control::before {
+    /* top: 105%; */
+    left: calc(50% - 1px);
+    right: calc(50% - 1px);
+    width: 2px;
+  }
+
+  .explore-slider__control {
+    position: absolute;
+    left: 50%;
+    /* left: calc(50% - 10px); */
+    /* right: calc(50% - 10px); */
+    right: 50%;
+    top: calc(50% - 10px);
+    bottom: calc(50% - 10px);
+    width: 5%;
+    height: 5%;
+    border: solid 2px white;
+    border-radius: 50%;
   }
 }

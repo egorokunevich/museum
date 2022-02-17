@@ -113,3 +113,9 @@
     max-width: 280px;
   }
 }
+
+@media (max-width: 420px) {
+  .card__title {
+    font-size: 18px;
+  }
+}

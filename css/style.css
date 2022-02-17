@@ -274,6 +274,10 @@ input[type="radio"]:checked + .form__label:after {
     padding: 40px 0 37px 0;
   }
 
+  .section_padding-up {
+    padding-top: 40px;
+  }
+
   .form__title {
     margin-bottom: 10px;
   }
@@ -291,4 +295,28 @@ input[type="radio"]:checked + .form__label:after {
     background-size: cover;
     background-attachment: fixed;
   }
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 380px;
+  }
+
+  * {
+    font-size: 16px;
+  }
+
+  .section__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .form__title {
+    font-size: 16px;
+  }
+
+  .font_thin {
+    font-size: 16px;
+  }
+
 }
