@@ -1,7 +1,27 @@
+.booking {
+  display: block;
+  position: fixed;
+  height: 100%;
+  left: -100%;
+  margin: 0 auto;
+  top: 0vh;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 1s all ease-in-out;
+  overflow: auto;
+}
+.booking__outer-container {
+  display: flex;
+  justify-content: center;
+}
+
 .booking-wrap {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .booking-container {
@@ -12,6 +32,8 @@
   column-gap: 40px;
   padding: 90px 0 90px 0;
   position: relative;
+  background-color: white;
+  z-index: 1;
 }
 
 /* Close button */
@@ -118,6 +140,7 @@
   position: relative;
   max-width: 190px;
   height: 100%;
+  background-color: transparent;
 }
 
 /* Input icons */
@@ -219,6 +242,7 @@
 .input__date,
 .input__time {
   width: calc(190px - 45px);
+  background-color: transparent;
 }
 
 /* Убирает иконки календаря и часов в хроме */
@@ -650,28 +674,41 @@
 
 @media (max-width: 768px) {
   .booking-wrap {
+    display: flex;
     max-width: 590px;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
   }
 
   .booking-container {
     flex-flow: column nowrap;
-    max-width: 550px;
+    max-width: 530px;
     row-gap: 50px;
+    padding: 0 30px;
+    margin-bottom: 40px;
   }
 
   .booking__tickets {
     max-width: 100%;
     width: 100%;
+    padding: 75px 0 50px 0;
   }
 
   .booking-form__label_date,
   .booking-form__label_time {
-    max-width: 265px;
+    max-width: 250px;
   }
 
   .booking__overview {
     max-width: 550px;
     padding: 20px 25px;
+  }
+
+  .form__date-time {
+    column-gap: 30px;
   }
 
   .input__text {
@@ -690,15 +727,29 @@
 
 @media (max-width: 420px) {
   .booking-container {
-    padding: 75px 0 40px 0;
+    max-width: 380px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    row-gap: 30px;
   }
 
   .booking__title {
     font-size: 32px;
   }
 
+  .booking__outer-container {
+    align-items: center;
+  }
+
+  .booking__tickets {
+    padding: 75px 0 15px 0;
+  }
+
   .booking-wrap {
-    max-width: 380px;
+    max-width: 420px;
+    width: 100%;
+    height: 100%;
   }
 
   .form__date-time {
