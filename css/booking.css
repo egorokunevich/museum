@@ -821,6 +821,7 @@
   .booking-form__label_date,
   .booking-form__label_time {
     max-width: 380px;
+    width: 100%;
   }
 
   .card-front {

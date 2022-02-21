@@ -170,6 +170,7 @@
 
   .tickets-pic-container {
     max-width: 100%;
+    width: 100%;
     max-height: 160px;
     overflow: hidden;
   }
@@ -188,6 +189,7 @@
   .tickets-form {
     padding: 0;
     margin-top: 40px;
+    width: 100%;
   }
 
   .ticket-amount__ticket-name {

@@ -161,6 +161,10 @@
   .header {
     max-height: 90px;
   }
+
+  .header__nav {
+    top: 90px;
+  }
 }
 
 .nav_active {
