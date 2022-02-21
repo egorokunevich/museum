@@ -40,12 +40,19 @@
   margin-top: 5%;
 }
 
+@media (max-width: 1440px) {
+  .picture-inner-container {
+    height: 2200px;
+  }
+  
+}
+
 @media (max-width: 1024px) {
   .picture-container {
     max-height: 1220px;
   }
 .picture-inner-container {
-  height: 2200px;
+  height: 1600px;
   column-gap: 26px;
   row-gap: 20px;
 }
@@ -73,6 +80,12 @@
   }
 }
 
+@media (max-width: 550px) {
+  .picture-inner-container {
+    height: 2500px;
+  }
+}
+
 @media (max-width: 420px) {
   .gallery-picture {
     max-width: calc((100% - 24px)/2);
@@ -83,7 +96,7 @@
   }
 
   .picture-inner-container {
-    height: 2200px;
+    height: 1800px;
   }
 
   .pic-1 {

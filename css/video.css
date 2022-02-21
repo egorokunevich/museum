@@ -415,7 +415,7 @@ input[type="range"]::-moz-range-progress {
   }
 
   .video-yt {
-    width: 300px;
+    width: calc((100% - 40px) / 3);
     height: 170px;
   }
 

@@ -328,7 +328,6 @@
   width: 100%;
   height: 100%;
   outline: 1px solid black;
-  
 }
 
 .booking__number {
@@ -398,6 +397,25 @@
   padding: 25px 30px;
 }
 
+.overview-info {
+  width: 100%;
+  position: relative;
+}
+
+.overview-info::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 120px;
+  background-image: url(../assets/img/overview-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 20;
+}
+
 .overview__title {
   margin: 0;
   margin-bottom: 5px;
@@ -421,7 +439,6 @@
   position: relative;
   margin-bottom: 6px;
 }
-
 
 .overview__date::before {
   content: "";
@@ -515,6 +532,7 @@
   display: flex;
   flex-flow: column nowrap;
   /* width: 360px; */
+  max-width: 360px;
   width: 100%;
   height: 210px;
   background-color: #bcbcbc;
@@ -605,6 +623,7 @@
   bottom: 0;
   right: 0;
   /* width: 360px; */
+  max-width: 360px;
   width: 100%;
   height: 210px;
   background-color: #939393;
@@ -677,6 +696,28 @@
   .booking__number {
     height: 25px;
   }
+
+  .booking-container {
+    padding: 70px 20px;
+  }
+
+  .booking-form__label_date,
+  .booking-form__label_time {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+@media (max-width: 900px) {
+  .card-back {
+    position: relative;
+  }
+
+  .overview__card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -717,6 +758,32 @@
   .form__date-time {
     column-gap: 30px;
   }
+
+  .card-back {
+    position: absolute;
+  }
+
+  .overview__card-info {
+    display: block;
+  }
+}
+
+@media (max-width: 560px) {
+  .card-back {
+    position: relative;
+  }
+
+  .overview-info::after {
+    width: 120px;
+    height: 96px;
+  }
+
+  .overview__card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -756,12 +823,6 @@
     max-width: 380px;
   }
 
-  .overview__card-info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 25px;
-  }
-
   .card-front {
     max-width: 330px;
     max-height: 290px;
@@ -776,7 +837,7 @@
   .card-front::before {
     right: 10px;
   }
-  
+
   .card-front::after {
     right: 10px;
   }
@@ -786,7 +847,7 @@
   .card-front::before {
     display: none;
   }
-  
+
   .card-front::after {
     display: none;
   }
@@ -794,4 +855,15 @@
   .booking-container {
     padding: 0 10px;
   }
+
+  .overview-info::after {
+    display: none;
+  }
+}
+
+/* дополнительные классы, активируемые с помощью JavaScript */
+
+/* Вывод формы на экран */
+.booking_active {
+  left: 0;
 }
