@@ -244,6 +244,7 @@ input[type="radio"]:checked + .form__label:after {
 
   .container {
     max-width: 984px;
+    padding: 0 20px;
   }
 
   .section__title {

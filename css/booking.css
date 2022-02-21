@@ -25,7 +25,7 @@
 }
 
 .booking-container {
-  width: 100%;
+  width: calc(100% - 60px);
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -102,11 +102,16 @@
   margin-bottom: 60px;
 }
 
+.booking__header {
+  width: 100%;
+}
+
 /* form */
 .booking-form {
   display: flex;
   flex-flow: column nowrap;
   row-gap: 20px;
+  width: 100%;
 }
 
 .booking-form__input {
@@ -236,12 +241,12 @@
 
 .input__text {
   box-sizing: border-box;
-  width: calc(400px - 45px);
+  width: 100%;
 }
 
 .input__date,
 .input__time {
-  width: calc(190px - 45px);
+  width: 100%;
   background-color: transparent;
 }
 
@@ -268,7 +273,7 @@
   border-radius: 0;
   box-sizing: border-box;
   height: 45px;
-  width: calc(400px - 45px);
+  width: 100%;
   font-size: 18px;
   padding: 0;
   margin: 0;
@@ -710,19 +715,6 @@
   .form__date-time {
     column-gap: 30px;
   }
-
-  .input__text {
-    width: calc(550px - 45px);
-  }
-
-  .input__date,
-  .input__time {
-    width: calc(265px - 45px);
-  }
-
-  .select__header {
-    width: calc(550px - 45px);
-  }
 }
 
 @media (max-width: 420px) {
@@ -760,19 +752,6 @@
   .booking-form__label_date,
   .booking-form__label_time {
     max-width: 380px;
-  }
-
-  .input__text {
-    width: calc(380px - 45px);
-  }
-
-  .input__date,
-  .input__time {
-    width: calc(380px - 45px);
-  }
-
-  .select__header {
-    width: calc(380px - 45px);
   }
 
   .overview__card-info {
