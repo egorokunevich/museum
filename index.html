@@ -26,6 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
   <title>Louvre Museum</title>
+  <script src="js/tickets-refresh.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -335,20 +336,20 @@
                   <div class="amount__container">
                     <p class="ticket-amount__ticket-name">Basic 18+</p>
                     <div class="amount__inputs">
-                      <div class="amount__btn">-</div>
-                      <input class="amount__number" type="number" min="0" max="20" value="0" readonly>
-                      <div class="amount__btn">+</div>
+                      <div id="ticketsBasicRemove" class="amount__btn">-</div>
+                      <input id="ticketsBasicAmount" class="amount__number" type="number" min="0" max="20" value="0" readonly>
+                      <div id="ticketsBasicAdd" class="amount__btn">+</div>
                     </div>
                   </div>
                   <div class="amount__container">
                     <p class="ticket-amount__ticket-name">Senior 65+</p>
                     <div class="amount__inputs">
-                      <div class="amount__btn">-</div>
-                      <input class="amount__number" type="number" min="0" max="20" value="0" readonly>
-                      <div class="amount__btn">+</div>
+                      <div id="ticketsSeniorRemove" class="amount__btn">-</div>
+                      <input id="ticketsSeniorAmount" class="amount__number" type="number" min="0" max="20" value="0" readonly>
+                      <div id="ticketsSeniorAdd" class="amount__btn">+</div>
                     </div>
                   </div>
-                  <h6 class="form__title amount__total">Total: €200</h6>
+                  <div id="ticketsTotal" class="form__title amount__total">Total: 0 €</div>
                   <button class="amount__btn_buy" id="tickets__buy-btn">Buy now</button>
                 </div>
               </div>
@@ -488,18 +489,18 @@
                 <div class="booking-entry__ticket">
                   <p class="text_black booking-entry__text">Basic 18+ (20 €)</p>
                   <div class="booking__inputs">
-                    <div id="booking__amount_minus" class="booking__btn">-</div>
-                    <input id="booking__amount_number" class="booking__number" type="number" min="0" max="20" value="0"
+                    <div id="booking_basicRemove" class="booking__btn">-</div>
+                    <input id="booking_basicAmount" class="booking__number" type="number" min="0" max="20" value="0"
                       readonly>
-                    <div id="booking__amount_plus" class="booking__btn">+</div>
+                    <div id="booking_basicAdd" class="booking__btn">+</div>
                   </div>
                 </div>
                 <div class="booking-entry__ticket">
                   <p class="text_black booking-entry__ticket booking-entry__text">Senior 65+ (10 €)</p>
                   <div class="booking__inputs">
-                    <div class="booking__btn">-</div>
-                    <input class="booking__number" type="number" min="0" max="20" value="0" readonly>
-                    <div class="booking__btn">+</div>
+                    <div id="booking_seniorRemove" class="booking__btn">-</div>
+                    <input id="booking_seniorAmount" class="booking__number" type="number" min="0" max="20" value="0" readonly>
+                    <div id="booking_seniorAdd" class="booking__btn">+</div>
                   </div>
                 </div>
               </div>
@@ -515,24 +516,24 @@
             </div>
             <div class="ticket-item">
               <div class="ticket__name text_black">
-                <div class="ticket__count">3</div>
+                <div id="overview_basicAmount" class="ticket__count">3</div>
                 Basic (20 €)
               </div>
-              <div class="ticket__price text_black">60 €</div>
+              <div id="basicPrice" class="ticket__price text_black">60</div>
             </div>
             <div class="ticket-item">
               <div class="ticket__name text_black">
-                <div class="ticket__count">4</div>
+                <div id="overview_seniorAmount" class="ticket__count">4</div>
                 Senior (10 €)
               </div>
-              <div class="ticket__price text_black">40 €</div>
+              <div id="seniorPrice" class="ticket__price text_black">40 €</div>
             </div>
             <div class="overview__underline"></div>
             <div class="overview-total">
               <div class="overview-total__total text_black">
                 Total:
               </div>
-              <div class="overview-total__amount text_black">
+              <div id="overviewTotal" class="overview-total__amount text_black">
                 100 €
               </div>
             </div>
