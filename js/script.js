@@ -94,49 +94,46 @@ const ticketsBasicRemove = document.getElementById("ticketsBasicRemove");
 const ticketsSeniorAdd = document.getElementById("ticketsSeniorAdd");
 const ticketsSeniorRemove = document.getElementById("ticketsSeniorRemove");
 
-// Booking Basic Stepper
-bookingBasicAdd.onclick = function () {
-  bookingBasicAmount.value++;
-  overviewBasicAmount.innerHTML = bookingBasicAmount.value;
-  basicPrice.innerHTML = (bookingBasicAmount.value * 20) + " €";
+// Переменная, содержащая цену за билет
+const price20 = 20;
+const price10 = 10;
+
+// Кнопка "+" в booking
+function bookingAdd(add, amount, price, overviewAmount, priceVar) {
+  add.onclick = function() {
+  amount.value++;
+  overviewAmount.innerHTML = amount.value;
+  price.innerHTML = (amount.value * priceVar) + " €";
   overviewTotal.innerHTML = ((bookingBasicAmount.value * 20)+(bookingSeniorAmount.value * 10)) + " €";
-};
-bookingBasicRemove.onclick = function () {
-  if(bookingBasicAmount.value > 0) {
-  bookingBasicAmount.value--;
-  overviewBasicAmount.innerHTML = bookingBasicAmount.value;
-  basicPrice.innerHTML = (bookingBasicAmount.value * 20) + " €";
-  overviewTotal.innerHTML = ((bookingBasicAmount.value * 20)+(bookingSeniorAmount.value * 10)) + " €";
-  }
-  else  {
-    bookingBasicAmount.value = 0;
-    overviewBasicAmount.innerHTML = bookingBasicAmount.value;
-    basicPrice.innerHTML = (bookingBasicAmount.value * 20) + " €";
-    overviewTotal.innerHTML = ((bookingBasicAmount.value * 20)+(bookingSeniorAmount.value * 10)) + " €";
   }
 };
 
-// Booking Senior Stepper
-bookingSeniorAdd.onclick = function () {
-  bookingSeniorAmount.value++;
-  overviewSeniorAmount.innerHTML = bookingSeniorAmount.value;
-  seniorPrice.innerHTML = (bookingSeniorAmount.value * 10) + " €";
-  overviewTotal.innerHTML = ((bookingBasicAmount.value * 20)+(bookingSeniorAmount.value * 10)) + " €";
-};
-bookingSeniorRemove.onclick = function () {
-  if(bookingSeniorAmount.value > 0) {
-  bookingSeniorAmount.value--;
-  overviewSeniorAmount.innerHTML = bookingSeniorAmount.value;
-  seniorPrice.innerHTML = (bookingSeniorAmount.value * 10) + " €";
+// Кнопка "-" в booking
+function bookingRemove(remove, amount, price, overviewAmount, priceVar) {
+remove.onclick = function () {
+  if(amount.value > 0) {
+  amount.value--;
+  overviewAmount.innerHTML = amount.value;
+  price.innerHTML = (amount.value * priceVar) + " €";
   overviewTotal.innerHTML = ((bookingBasicAmount.value * 20)+(bookingSeniorAmount.value * 10)) + " €";
   }
   else  {
-    bookingSeniorAmount.value = 0;
-    overviewSeniorAmount.innerHTML = bookingSeniorAmount.value;
-    seniorPrice.innerHTML = (bookingSeniorAmount.value * 10) + " €";
+    amount.value = 0;
+    overviewAmount.innerHTML = amount.value;
+    price.innerHTML = (amount.value * priceVar) + " €";
     overviewTotal.innerHTML = ((bookingBasicAmount.value * 20)+(bookingSeniorAmount.value * 10)) + " €";
   }
 };
+};
+
+// Booking Basic Stepper
+bookingAdd(bookingBasicAdd, bookingBasicAmount, basicPrice, overviewBasicAmount, price20);
+bookingRemove(bookingBasicRemove, bookingBasicAmount, basicPrice, overviewBasicAmount, price20);
+
+// Booking Senior Stepper
+bookingAdd(bookingSeniorAdd, bookingSeniorAmount, seniorPrice, overviewSeniorAmount, price10);
+bookingRemove(bookingSeniorRemove, bookingSeniorAmount, seniorPrice, overviewSeniorAmount, price10);
+
 
 
 // Обновляет сумму Total в Tickets при обновлении страницы
