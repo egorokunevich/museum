@@ -25,15 +25,26 @@ burger.onclick = function () {
     }
 
     // Переключение видимости контента welcome.
-    if (welcomeContent.classList.contains("welcome-content_active")) {
-      welcomeContent.classList.remove("welcome-content_active");
-    } else {
-      welcomeContent.classList.add("welcome-content_active");
-    }
+    // if (welcomeContent.classList.contains("welcome-content_active")) {
+    //   welcomeContent.classList.remove("welcome-content_active");
+    // } else {
+    //   welcomeContent.classList.add("welcome-content_active");
+    // }
   }
 
   // Переключение иконки бургер-меню.
   burger.classList.toggle("burger_active");
+};
+document.onclick = function () {
+  if (
+    document.documentElement.clientWidth <= 1024 &&
+    document.documentElement.clientWidth > 768 &&
+    nav.classList.contains("nav_active")
+  ) {
+    welcomeContent.classList.add("welcome-content_active");
+  } else {
+    welcomeContent.classList.remove("welcome-content_active");
+  }
 };
 
 // Кол-во билетов в секции Tickets
