@@ -204,10 +204,17 @@
               <div class="explore-slider__container">
                 <div class="explore-slider">
                   <div class="explore-slider__after">
-                    <img class="img-block img-scale" src="assets/img/explore-slider/after.jpg" alt="after.jpg">
+                    <img class="explore__img img-block img-scale" src="assets/img/explore-slider/after.jpg" alt="after.jpg">
+                  <div class="after-container">
+                    <img class="explore__img2 img-block" src="assets/img/explore-slider/after.jpg" alt="after.jpg">
+                  </div>
                   </div>
                   <div class="explore-slider__control">
+                    <div class="slider-thumb">
+                      <div class="slider__thumb"></div>
+                    </div>
                   </div>
+                  <input class="explore-range explore-slider__input" name="exploreRange" type="range" min="0" max="99" value="50">
                 </div>
               </div>
             </div>
@@ -233,11 +240,11 @@
                   <div class="player-controls__play cursor-pointer">
                     <div class="player-controls__btn-opacity"></div>
                   </div>
-                  <input type="range" value="35" min="0" max="100" class="player-controls__progress cursor-pointer">
+                  <input type="range" value="35" min="0" max="100" class="video-range player-controls__progress cursor-pointer">
                   <div class="player-controls__mute cursor-pointer">
                     <div class="player-controls__btn-opacity"></div>
                   </div>
-                  <input type="range" value="75" min="0" max="100" class="player-controls__volume cursor-pointer">
+                  <input type="range" value="75" min="0" max="100" class="video-range player-controls__volume cursor-pointer">
                   <div class="player-controls__fullscreen cursor-pointer">
                     <div class="player-controls__btn-opacity"></div>
                   </div>

@@ -212,3 +212,18 @@ window.onload = (event) => {
     (ticketsBasicAmount.value * 20 + ticketsSeniorAmount.value * 10) +
     " €";
 };
+
+
+//explore slider
+
+let sliderControl = document.querySelector("div.explore-slider__control");
+let sliderAfter = document.querySelector("div.after-container");
+let rangeThumb = document.querySelector("div.explore-slider input[name=exploreRange]");
+
+rangeThumb.oninput = function() {
+  sliderControl.style.left = rangeThumb.value + "%";
+  sliderAfter.style.width = (100 - rangeThumb.value) + "%";
+  console.log("value: " + rangeThumb.value);
+  console.log("width: " + sliderAfter.style.width);
+}
+
