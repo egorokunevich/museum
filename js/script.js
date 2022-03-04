@@ -23,13 +23,6 @@ burger.onclick = function () {
     } else {
       nav.classList.add("nav_active");
     }
-
-    // Переключение видимости контента welcome.
-    // if (welcomeContent.classList.contains("welcome-content_active")) {
-    //   welcomeContent.classList.remove("welcome-content_active");
-    // } else {
-    //   welcomeContent.classList.add("welcome-content_active");
-    // }
   }
 
   // Переключение иконки бургер-меню.
@@ -44,6 +37,13 @@ document.onclick = function () {
     welcomeContent.classList.add("welcome-content_active");
   } else {
     welcomeContent.classList.remove("welcome-content_active");
+  }
+};
+
+// Закрывает бургер-меню при выборе одного из элементов
+document.querySelector(".nav-link").onclick = function () {
+  if (nav.classList.contains("nav_active")) {
+    nav.classList.remove("nav_active");
   }
 };
 
@@ -213,17 +213,22 @@ window.onload = (event) => {
     " €";
 };
 
-
 //explore slider
 
 let sliderControl = document.querySelector("div.explore-slider__control");
 let sliderAfter = document.querySelector("div.after-container");
-let rangeThumb = document.querySelector("div.explore-slider input[name=exploreRange]");
+let rangeThumb = document.querySelector(
+  "div.explore-slider input[name=exploreRange]"
+);
 
-rangeThumb.oninput = function() {
+rangeThumb.oninput = function () {
   sliderControl.style.left = rangeThumb.value + "%";
-  sliderAfter.style.width = (100 - rangeThumb.value) + "%";
+  if (rangeThumb.value == "99") {
+    sliderAfter.style.width = 0 + "%";
+  } else {
+    sliderAfter.style.width = 100 - rangeThumb.value + "%";
+  }
+
   console.log("value: " + rangeThumb.value);
   console.log("width: " + sliderAfter.style.width);
-}
-
+};
