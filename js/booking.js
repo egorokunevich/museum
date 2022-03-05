@@ -26,7 +26,12 @@ closeBtn.onclick = function () {
   ticketsBasicAmount.value = bookingBasicAmount.value;
   ticketsSeniorAmount.value = bookingSeniorAmount.value;
   ticketsTotal.innerHTML = "Total: " + overviewTotal.innerHTML;
+  // Check which ticket type is selected
+  selectCheck();
+  // Send selected ticket type to "Tickets" radio
+  setRadio();
 };
+
 buyBtn.onclick = function () {
   // Sends tickets' amount from "Tickets" to "Booking" form when form is called
   bookingSeniorAmount.value = ticketsSeniorAmount.value;
@@ -44,8 +49,11 @@ buyBtn.onclick = function () {
 
   // Calls "Booking" form when "Buy now" btn is clicked
   bookingWindow.classList.add("booking_active");
+  // Check which ticket type is selected in radio in "Tickets" section
+  radioCheck();
+  // Sends selected ticket type to "Booking" form
+  setOption();
 };
-
 
 // Variables for Steppers in form
 const bookingBasicAdd = document.getElementById("booking_basicAdd");
@@ -168,3 +176,43 @@ window.onload = (event) => {
     (ticketsBasicAmount.value * 20 + ticketsSeniorAmount.value * 10) +
     " €";
 };
+
+let radios = document.querySelectorAll('input[name="radio-btn__ticket"]');
+let radioValue;
+
+// Function writes checked radio option to radioValue;
+function radioCheck() {
+  for (let i = 0; i < radios.length; i++) {
+    if (radios[i].checked) {
+      radioValue = radios[i].value;
+    }
+  }
+}
+
+let select = document.querySelector("select.select__header").getElementsByTagName('option');
+// Function sends selected ticket type to the "Booking" form
+function setOption() {
+for (let i = 0; i < select.length; i++) {
+  if (select[i].value === radioValue) select[i].selected = true;
+}
+}
+
+let selectedOption;
+
+// Function writes selected option to selectedOption;
+function selectCheck() {
+  for (let i = 0; i < select.length; i++) {
+    if (select[i].selected) {
+      selectedOption = select[i].value;
+    }
+  }
+}
+// Function sends selected ticket type to the "Tickets" section
+function setRadio() {
+  for (let i = 0; i < radios.length; i++) {
+    if (radios[i].value === selectedOption) radios[i].checked = true;
+  }
+  }
+
+  // занести в овервью тикет тайп
+  // let overviewTicket = document.querySelector("div.overview__ticket-type");
