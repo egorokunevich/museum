@@ -1,15 +1,15 @@
 let slider = document.querySelector("div.slider");
-// let sliderItems = document.querySelector("div.welcome__slides");
 let slides = document.querySelectorAll("div.welcome__slide");
 let prev = document.querySelector("div.slider__arrow_left");
 let next = document.querySelector("div.slider__arrow_right");
-let sliderDot = document.querySelector(".slider__dot");
+let sliderDot = document.querySelectorAll(".slider__dot");
 
-let sliderIndex = 0;
-let position = `translateX(-${sliderIndex * 1000}px)`;
+let sliderIndex = 0; // Current slide index
+let position = `translateX(-${sliderIndex * 1000}px)`; // Slides' offset
 let sliderWidth = slider.clientWidth;
 console.log(sliderWidth);
 
+// Previous slide
 prev.onclick = function prevSlide() {
   if (sliderIndex == 0) {
     sliderIndex = 4;
@@ -17,9 +17,10 @@ prev.onclick = function prevSlide() {
     sliderIndex--;
   }
   changePosition();
-  // dotActive();
-  dots();
+  dotActive();
 };
+
+// Next slide
 next.onclick = function nextSlide() {
   if (sliderIndex == 4) {
     sliderIndex = 0;
@@ -27,10 +28,10 @@ next.onclick = function nextSlide() {
     sliderIndex++;
   }
   changePosition();
-  // dotActive();
-  dots();
+  dotActive();
 };
 
+// Moves slides
 function changePosition() {
   sliderWidth = slider.clientWidth;
   position = `translateX(-${sliderIndex * sliderWidth}px)`;
@@ -39,34 +40,8 @@ function changePosition() {
   }
 }
 
-// function dotActive() {
-//   for (let i = 0; i < sliderDot.length; i++) {
-//     console.log("index = ", sliderIndex);
-//     console.log("dot = ", sliderDot[i]);
-//     if (i == sliderIndex) {
-//       sliderDot[i].classList.add("slider__dot_active");
-//     } else {
-//       sliderDot[i].classList.remove("slider__dot_active");
-//     }
-//     console.log("index = ", sliderIndex);
-//     console.log("dot = ", sliderDot[i]);
-//   }
-// }
-
-function dots() {
-  for (let i = 0; i < sliderDot.length; i++) {
-    if (i == sliderIndex) {
-      // sliderDot[i].classList.add("slider__dot_active");
-      sliderDot.classList.add("slider__dot_active")[i];
-    }
-    else {
-      // sliderDot[i].classList.remove("slider__dot_active");
-      sliderDot.classList.remove("slider__dot_active")[i];
-    }
-  }
-}
-
-function ddots() {
+// Moves active dot
+function dotActive() {
   for (let i = 0; i < sliderDot.length; i++) {
     if (i == sliderIndex) {
       sliderDot[i].classList.add("slider__dot_active");
