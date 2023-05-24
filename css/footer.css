@@ -132,3 +132,13 @@
 .authors_padding {
   padding: 25px 0 25px 0;
 }
+
+@media (max-width: 1024px) {
+  .authors__codewarsbar {
+    display: none;
+  }
+  .authors__school {
+    display: block;
+  }
+}
+
